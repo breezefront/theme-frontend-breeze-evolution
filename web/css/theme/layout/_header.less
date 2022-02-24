@@ -1,0 +1,19 @@
+& when (@critical) {
+    .header.panel,
+    .header.content {
+        @media @media-xxl {
+            --container-max-width: ~"calc(100% - 100px)";
+        }
+    }
+    .header.content {
+        padding-top: @5;
+        padding-bottom: @5;
+    }
+    .page-header {
+        border-bottom: 2px solid #eff3f6;
+        .panel.wrapper {
+            color: ~"rgba(@{rgb-white}, .85)";
+            background: #000d3a;
+        }
+    }
+}
