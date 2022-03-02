@@ -24,8 +24,6 @@
 
 @breadcrumbs__min-height: @16;
 
-@navigation__media-desktop: @media-lg;
-@navigation__media-mobile: @media-lg-down;
-
-@minisearch__media-desktop: @media-xl;
-@minisearch__media-mobile: @media-xl-down;
+@minisearch__media-desktop: ~"@{media-sm} and @{media-lg-down}, @{media-xl}";
+@minisearch__media-mobile: ~"@{media-sm-down}, @{media-lg} and @{media-xl-down}";
+@minisearch__top: ~"calc(100% + 2px)";
