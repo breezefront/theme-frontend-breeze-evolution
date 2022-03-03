@@ -1,8 +1,35 @@
 & when (@critical) {
     .breadcrumbs {
+        color: @muted__color;
+        font-size: .85rem;
         ul {
             padding-top: @5;
             padding-bottom: @5;
+        }
+
+        .home {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                width: @4;
+                height: @4;
+            }
+            a {
+                position: relative;
+                z-index: 2;
+                .text-indent(-9999px);
+                width: @4;
+                height: @4;
+            }
+        }
+    }
+}
+
+& when not (@critical) {
+    .breadcrumbs {
+        .home::before {
+            .breeze-icon(@icon-s-home, @4);
         }
     }
 }
