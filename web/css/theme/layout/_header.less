@@ -1,8 +1,11 @@
 & when (@critical) {
     .header.panel,
     .header.content {
+        @media @media-sm {
+            --container-max-width: 100%;
+        }
         @media @media-xxl {
-            --container-max-width: ~"calc(100% - 100px)";
+            --container-max-width: 90%;
         }
     }
     .header.content {
