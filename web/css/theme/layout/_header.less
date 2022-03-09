@@ -20,3 +20,12 @@
         }
     }
 }
+
+& when not (@critical) {
+    .page-header {
+        .panel.wrapper {
+            --ring-color: @rgb-white;
+            --ring-alpha: .8;
+        }
+    }
+}
