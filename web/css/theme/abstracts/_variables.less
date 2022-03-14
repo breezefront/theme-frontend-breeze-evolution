@@ -41,14 +41,14 @@
 @danger__color: @red-600;
 @danger__background: @red-100;
 
-// Breadcrumbs
-@breadcrumbs__min-height: @16;
-@breadcrumbs__color: @muted__color;
-@breadcrumbs__font-size: .85rem;
-@breadcrumbs__padding-top: @5;
-@breadcrumbs__padding-bottom: @5;
-@breadcrumbs-item__active__font-weight: 400;
-@breadcrumbs-item-home__icon: @icon-s-home;
+@header__border: 2px solid #eff3f6;
+@header__border-width: 0 0 2px;
+@header-panel__background: #000d3a;
+@header-panel__color: ~"rgba(@{rgb-white}, .85)";
+@header-panel--ring-color: @rgb-white;
+@header-panel--ring-alpha: .8;
+@header-content__padding-top: @5;
+@header-content__padding-bottom: @5;
 
 // Navigation
 @rgb-navigation: red(#002d57), green(#002d57), blue(#002d57);
@@ -62,6 +62,15 @@
 @minisearch-input__background-rgb: @rgb-gray-100;
 @minisearch-input__border-color-rgb: @minisearch-input__background-rgb;
 @minisearch__padding: @2 @1;
+
+// Breadcrumbs
+@breadcrumbs__min-height: @16;
+@breadcrumbs__color: @muted__color;
+@breadcrumbs__font-size: .85rem;
+@breadcrumbs__padding-top: @5;
+@breadcrumbs__padding-bottom: @5;
+@breadcrumbs-item__active__font-weight: 400;
+@breadcrumbs-item-home__icon: @icon-s-home;
 
 // Blocks
 @block__indent: @9;

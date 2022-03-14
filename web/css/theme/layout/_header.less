@@ -8,24 +8,4 @@
             --container-max-width: 1800px;
         }
     }
-    .header.content {
-        padding-top: @5;
-        padding-bottom: @5;
-    }
-    .page-header {
-        border-bottom: 2px solid #eff3f6;
-        .panel.wrapper {
-            color: ~"rgba(@{rgb-white}, .85)";
-            background: #000d3a;
-        }
-    }
-}
-
-& when not (@critical) {
-    .page-header {
-        .panel.wrapper {
-            --ring-color: @rgb-white;
-            --ring-alpha: .8;
-        }
-    }
 }
