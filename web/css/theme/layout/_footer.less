@@ -1,0 +1,25 @@
+& when (@critical) {
+    .footer-top,
+    .footer-middle {
+        position: relative;
+        &::after {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            top: 70px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .footer-top::after {
+        top: 145px;
+        .lib-css(background, @footer-top__background-color);
+    }
+    .footer-middle::after {
+        .lib-css(background, @footer-middle__background-color);
+    }
+    .footer-top + .footer-middle {
+        margin-top: -70px;
+    }
+}
