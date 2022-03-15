@@ -45,10 +45,8 @@
 // Header
 @header__border: 2px solid #eff3f6;
 @header__border-width: 0 0 2px;
+@header-panel__dark: true;
 @header-panel__background: #000d3a;
-@header-panel__color: ~"rgba(@{rgb-white}, .85)";
-@header-panel--ring-color: @rgb-white;
-@header-panel--ring-alpha: .8;
 @header-content__padding-top: @5;
 @header-content__padding-bottom: @5;
 @header-content__background: @white;
@@ -62,9 +60,9 @@
 @minisearch__media-mobile: ~"@{media-sm-down}, @{media-lg} and @{media-xl-down}";
 @minisearch__media-inline: ~"@{media-lg} and @{media-xl-down}";
 @minisearch__top: ~"calc(100% + 2px)";
-@minisearch-input__background-rgb: @rgb-gray-100;
-@minisearch-input__border-color-rgb: @minisearch-input__background-rgb;
 @minisearch__padding: @2 @1;
+@minisearch-input--background: @rgb-gray-100;
+@minisearch-input--border-color: @minisearch-input--background;
 
 // Breadcrumbs
 @breadcrumbs__min-height: @16;
