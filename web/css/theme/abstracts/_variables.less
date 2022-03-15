@@ -41,6 +41,7 @@
 @danger__color: @red-600;
 @danger__background: @red-100;
 
+// Header
 @header__border: 2px solid #eff3f6;
 @header__border-width: 0 0 2px;
 @header-panel__background: #000d3a;
@@ -49,6 +50,7 @@
 @header-panel--ring-alpha: .8;
 @header-content__padding-top: @5;
 @header-content__padding-bottom: @5;
+@header-content__background: @white;
 
 // Navigation
 @rgb-navigation: red(#002d57), green(#002d57), blue(#002d57);
@@ -200,3 +202,26 @@
 // Reviews
 @rating__color: @gray-800;
 @review-action__color: @gray-900;
+
+// Page background elements
+@page-blobs: true;
+
+@page-blob__icon: '<svg width="557" height="601" viewBox="0 0 557 601" xmlns="http://www.w3.org/2000/svg"><path d="M476.981 73.371C531.578 125 578.722 217.779 546.344 287.986C512.611 361.074 426.63 331.32 337.127 427.12C266.635 502.568 278.636 561.644 212.479 589.167C163.039 609.676 92.3096 603.34 50.4148 568.153C-64.9737 471.254 53.5582 211.861 62.3293 193.439C98.84 116.668 135.137 40.2993 223.975 11.3336C312.529 -17.5655 413.722 13.6179 476.981 73.371Z"/></svg>';
+@page-blob__width: 557px;
+@page-blob__height: 601px;
+@page-blob__color: @gray-50;
+@page-blob__top: -150px;
+@page-blob__bottom: false;
+@page-blob__left: -130px;
+@page-blob__right: false;
+@page-blob__transform: false;
+
+@page-blob2__icon: false;
+@page-blob2__color: false;
+@page-blob2__top: false;
+@page-blob2__bottom: 0;
+@page-blob2__left: false;
+@page-blob2__right: -50px;
+@page-blob2__width: @page-blob__width;
+@page-blob2__height: @page-blob__height;
+@page-blob2__transform: rotate(225deg);
