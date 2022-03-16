@@ -9,6 +9,13 @@
                     <param name="path" type="path">content/cms_block/header_panel_info.html</param>
                 </item>
             </item>
+            <item>
+                <item name="title">footer_content</item>
+                <item name="identifier">footer_content</item>
+                <item name="content" helper="Swissup\Marketplace\Installer\Helper\Renderer::render">
+                    <param name="path" type="path">content/cms_block/footer_content.html</param>
+                </item>
+            </item>
         </data>
     </command>
 </config>

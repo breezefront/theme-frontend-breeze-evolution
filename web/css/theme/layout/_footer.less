@@ -1,4 +1,15 @@
 & when (@critical) {
+    .footer-middle {
+        & when (@footer-middle__dark) {
+            --base-color: red(@sky-100), green(@sky-100), blue(@sky-100);
+            --link-color: var(--base-color);
+            --headings-color: @rgb-white;
+            --base-alpha: .6;
+            --link-alpha: .6;
+            --ring-alpha: .6;
+            --headings-alpha: .9;
+        }
+    }
     .footer-top,
     .footer-middle {
         position: relative;
