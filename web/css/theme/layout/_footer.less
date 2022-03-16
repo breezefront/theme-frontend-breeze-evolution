@@ -13,7 +13,10 @@
         }
     }
     .footer-top::after {
-        top: 145px;
+        top: 80px;
+        @media (max-width: @footer-top__background-max-width) {
+            top: 145px;
+        }
         .lib-css(background, @footer-top__background-color);
     }
     .footer-middle::after {
