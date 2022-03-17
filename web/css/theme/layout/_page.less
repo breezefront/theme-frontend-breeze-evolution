@@ -1,10 +1,14 @@
-& when not (@critical) {
+& when (@critical) {
     .page-wrapper {
         overflow: hidden;
     }
     .page-main {
         position: relative;
+    }
+}
 
+& when not (@critical) {
+    .page-main {
         & when (@page-blobs = true) {
             &::before,
             &::after {
