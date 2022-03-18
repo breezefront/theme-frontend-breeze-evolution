@@ -16,6 +16,13 @@
                     <param name="path" type="path">content/cms_block/footer_content.html</param>
                 </item>
             </item>
+            <item>
+                <item name="title">contact_content</item>
+                <item name="identifier">contact_content</item>
+                <item name="content" helper="Swissup\Marketplace\Installer\Helper\Renderer::render">
+                    <param name="path" type="path">content/cms_block/contact_content.html</param>
+                </item>
+            </item>
         </data>
     </command>
 </config>

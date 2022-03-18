@@ -1,0 +1,53 @@
+& when (@critical) {
+    .contact-index-index {
+        .footer-top {
+            padding-left: @6;
+            padding-right: @6;
+        }
+    }
+    .form.contact {
+        .footer-top & {
+            position: relative;
+            z-index: 2;
+            max-width: 550px;
+            margin: -80px auto;
+            padding: @12;
+            box-shadow: @shadow-lg-around;
+            background: @z-layer__background;
+            border-radius: @modal__border-radius;
+            border-top: 3px solid @black;
+
+            .legend {
+                .text-4xl();
+                text-align: center;
+                font-weight: 700;
+                border: 0;
+            }
+
+            .field {
+                &.note {
+                    display: none;
+                }
+
+                @media @media-xs {
+                    &.name,
+                    &.email {
+                        width: 48%;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                    &.name {
+                        .margin-right(4%);
+                    }
+                    &.email {
+                        .margin-left(-5px);
+                    }
+                }
+            }
+
+            .actions-toolbar {
+                justify-content: center;
+            }
+        }
+    }
+}
