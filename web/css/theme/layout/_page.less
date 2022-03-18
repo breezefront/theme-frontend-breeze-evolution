@@ -46,6 +46,19 @@
                 .left(@page-blob2__left);
                 .right(@page-blob2__right);
             }
+
+            .narrow-page:not(.narrow-page-reset) & {
+                &::before {
+                    & when not (@page-blob__left = false) {
+                        .left(@page-blob__left - 100px);
+                    }
+                }
+                &::after {
+                    & when not (@page-blob2__right = false) {
+                        .right(@page-blob2__right - 100px);
+                    }
+                }
+            }
         }
     }
 }
