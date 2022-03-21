@@ -1,4 +1,5 @@
 & when (@critical) {
+    :where(body:not(.narrow-page-reset)) .checkout-success,
     .login-container,
     .form.form-orders-search,
     .form.search.advanced,
@@ -19,6 +20,7 @@
         }
     }
 
+    :where(body:not(.narrow-page-reset)) .checkout-success,
     .form.form-orders-search,
     .form-create-account {
         .actions-toolbar {
