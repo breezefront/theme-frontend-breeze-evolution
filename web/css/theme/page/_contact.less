@@ -7,21 +7,11 @@
     }
     .form.contact {
         .footer-top & {
-            position: relative;
-            z-index: 2;
-            max-width: 550px;
+            &:extend(.breeze-block-boxed);
             margin: -80px auto;
-            padding: @12;
-            box-shadow: @shadow-lg-around;
-            background: @z-layer__background;
-            border-radius: @modal__border-radius;
-            border-top: 3px solid @black;
 
             .legend {
-                .text-4xl();
-                text-align: center;
-                font-weight: 700;
-                border: 0;
+                &:extend(.breeze-block-boxed-title);
             }
 
             .field {

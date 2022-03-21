@@ -1,0 +1,37 @@
+& when (@critical) {
+    .login-container,
+    .form.form-orders-search,
+    .form.search.advanced,
+    .form.password.forget,
+    .form-create-account,
+    .page-layout-1column.cms-no-route .columns {
+        &:extend(.breeze-block-boxed all);
+    }
+
+    .login-container {
+        max-width: none;
+    }
+
+    .form.form-orders-search,
+    .form.search.advanced {
+        legend {
+            &:extend(.sr-only);
+        }
+    }
+
+    .form.form-orders-search,
+    .form-create-account {
+        .actions-toolbar {
+            justify-content: center;
+        }
+    }
+
+    .catalogsearch-advanced-index,
+    .customer-account-forgotpassword,
+    .customer-account-create{
+        .page.messages {
+            .lib-css(max-width, @boxed-block__max-width);
+            .lib-css(margin, @boxed-block__margin);
+        }
+    }
+}
