@@ -7,7 +7,7 @@
 
     <fields>
         <field name="theme" title="Select Theme">
-            <option title="Breeze Blank">swissup/theme-frontend-breeze-evolution</option>
+            <option title="Breeze Evolution">swissup/theme-frontend-breeze-evolution</option>
         </field>
     </fields>
 
@@ -16,6 +16,8 @@
             <param name="theme">swissup/theme-frontend-breeze-evolution</param>
         </conditions>
         <include path="commands/config.xml"/>
+        <include path="commands/cms_page.xml"/>
         <include path="commands/cms_block.xml"/>
+        <include path="commands/resources.xml"/>
     </commands>
 </config>
