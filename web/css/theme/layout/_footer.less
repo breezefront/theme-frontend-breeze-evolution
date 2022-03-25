@@ -17,17 +17,14 @@
             z-index: -1;
             content: '';
             position: absolute;
-            top: 70px;
+            top: 75px;
             left: 0;
             right: 0;
             bottom: 0;
         }
     }
     .footer-top::after {
-        top: 80px;
-        @media (max-width: @footer-top__background-max-width) {
-            top: 145px;
-        }
+        top: 115px;
         .lib-css(background, @footer-top__background-color);
     }
     .footer-middle::after {
@@ -37,6 +34,6 @@
         margin-top: -20px;
     }
     .footer-top + .footer-middle {
-        margin-top: -66px;
+        margin-top: -72px;
     }
 }
