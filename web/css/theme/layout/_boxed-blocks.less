@@ -1,5 +1,6 @@
 & when (@critical) {
     :where(body:not(.narrow-page-reset)) .checkout-success,
+    :where(body:not(.narrow-page-reset)) #registration,
     .login-container,
     .form.form-orders-search,
     .form.search.advanced,
@@ -36,5 +37,14 @@
             .lib-css(max-width, @boxed-block__max-width);
             .lib-css(margin, @boxed-block__margin);
         }
+    }
+
+    :where(body:not(.narrow-page-reset)) .checkout-success,
+    :where(body:not(.narrow-page-reset)) .checkout-success + #registration {
+        text-align: center;
+    }
+
+    :where(body:not(.narrow-page-reset)) .checkout-success + #registration {
+        margin-top: 85px;
     }
 }
