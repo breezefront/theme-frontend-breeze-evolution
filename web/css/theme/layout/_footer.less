@@ -27,7 +27,13 @@
     .footer-top::after {
         .lib-css(background, @footer-top-after__background);
     }
-    .footer-middle::after {
-        .lib-css(background, @footer-middle-after__background);
+    .footer-middle {
+        & when (@footer-middle__dark) {
+            --link-color: @rgb-white;
+            --link-alpha: .7;
+        }
+        &::after {
+            .lib-css(background, @footer-middle-after__background);
+        }
     }
 }
