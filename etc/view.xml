@@ -165,17 +165,64 @@
     </media>
     <vars module="Swissup_Breeze">
         <var name="sizes">
-            <var name="category_page_grid">(min-width: 1536px) 325px, (min-width: 1280px) calc((85vw - 220px - 5rem) / 3), (min-width: 1024px) calc((100vw - 220px - 5rem) / 3), (min-width: 768px) calc((100vw - 180px - 4rem) / 3), (min-width: 640px) calc((100vw - 3rem) / 3), calc((100vw - 2rem) / 2)</var>
-            <var name="category_page_grid-1column">(min-width: 1536px) 305px, (min-width: 1280px) calc((85vw - 4rem) / 4), (min-width: 1024px) calc((100vw - 4rem) / 4), (min-width: 640px) calc((100vw - 3rem) / 3), calc((100vw - 2rem) / 2)</var>
+            <var name="category_page_grid"><![CDATA[
+                (min-width: 1536px) 325px,
+                (min-width: 1280px) calc((85vw - 220px - 5rem) / 3),
+                (min-width: 1024px) calc((100vw - 220px - 5rem) / 3),
+                (min-width: 768px) calc((100vw - 180px - 4rem) / 3),
+                (min-width: 640px) calc((100vw - 3rem) / 3),
+                calc((100vw - 2rem) / 2)
+            ]]></var>
+            <var name="category_page_grid-1column"><![CDATA[
+                (min-width: 1536px) 305px,
+                (min-width: 1280px) calc((85vw - 4rem) / 4),
+                (min-width: 1024px) calc((100vw - 4rem) / 4),
+                (min-width: 640px) calc((100vw - 3rem) / 3),
+                calc((100vw - 2rem) / 2)
+            ]]></var>
             <var name="category_page_grid-cms-full-width">use:category_page_grid-1column</var>
-            <var name="category_page_grid-3columns">(min-width: 1536px) 245px, (min-width: 1280px) calc((85vw - 440px - 7rem) / 3), (min-width: 1024px) calc((100vw - 440px - 7rem) / 3), (min-width: 768px) calc((100vw - 180px - 4rem) / 3), (min-width: 640px) calc((100vw - 3rem) / 3), calc((100vw - 2rem) / 2)</var>
-            <var name="category_page_list">(min-width: 1400px) 325px, (min-width: 1280px) calc((85vw - 220px - 3rem) * 0.35), (min-width: 1024px) calc((100vw - 220px - 3rem) * 0.35), (min-width: 768px) calc((100vw - 180px - 2rem) * 0.35), calc((100vw - 1rem) * 0.35)</var>
-            <var name="category_page_list-1column">(min-width: 950px) 325px, (min-width: 768px) calc((100vw - 1rem) * 0.35), calc((100vw - 1rem) * 0.35)</var>
+            <var name="category_page_grid-3columns"><![CDATA[
+                (min-width: 1536px) 245px,
+                (min-width: 1280px) calc((85vw - 440px - 7rem) / 3),
+                (min-width: 1024px) calc((100vw - 440px - 7rem) / 3),
+                (min-width: 768px) calc((100vw - 180px - 4rem) / 3),
+                (min-width: 640px) calc((100vw - 3rem) / 3),
+                calc((100vw - 2rem) / 2)
+            ]]></var>
+            <var name="category_page_list"><![CDATA[
+                (min-width: 1400px) 325px,
+                (min-width: 1280px) calc((85vw - 220px - 3rem) * 0.35),
+                (min-width: 1024px) calc((100vw - 220px - 3rem) * 0.35),
+                (min-width: 768px) calc((100vw - 180px - 2rem) * 0.35),
+                calc((100vw - 1rem) * 0.35)
+            ]]></var>
+            <var name="category_page_list-1column"><![CDATA[
+                (min-width: 950px) 325px,
+                (min-width: 768px) calc((100vw - 1rem) * 0.35),
+                calc((100vw - 1rem) * 0.35)
+            ]]></var>
             <var name="category_page_list-cms-full-width">use:category_page_list-1column</var>
-            <var name="category_page_list-3columns">(min-width: 1536px) 265px, (min-width: 1280px) calc((85vw - 440px - 5rem) * 0.35), (min-width: 1024px) calc((100vw - 440px - 5rem) * 0.35), (min-width: 768px) calc((100vw - 180px - 2rem) * 0.35), calc((100vw - 1rem) * 0.35)</var>
-            <var name="product_page_image_medium">(min-width: 1536px) 608px, (min-width: 1280px) calc((85vw - 4rem) / 2), (min-width: 768px) calc((100vw - 4rem) / 2), calc(100vw - 1rem)</var>
+            <var name="category_page_list-3columns"><![CDATA[
+                (min-width: 1536px) 265px,
+                (min-width: 1280px) calc((85vw - 440px - 5rem) * 0.35),
+                (min-width: 1024px) calc((100vw - 440px - 5rem) * 0.35),
+                (min-width: 768px) calc((100vw - 180px - 2rem) * 0.35),
+                calc((100vw - 1rem) * 0.35)
+            ]]></var>
+            <var name="product_page_image_medium"><![CDATA[
+                (min-width: 1536px) 608px,
+                (min-width: 1280px) calc((85vw - 4rem) / 2),
+                (min-width: 768px) calc((100vw - 4rem) / 2),
+                calc(100vw - 1rem)
+            ]]></var>
             <var name="product_page_image_small">110px</var>
-            <var name="cart_page_product_thumbnail">(min-width: 1280px) 170px, (min-width: 1024px) 145px, (min-width: 768px) 125px, (min-width: 640px) 170px, (min-width: 480px) 110px, 80px</var>
+            <var name="cart_page_product_thumbnail"><![CDATA[
+                (min-width: 1280px) 170px,
+                (min-width: 1024px) 145px,
+                (min-width: 768px) 125px,
+                (min-width: 640px) 170px,
+                (min-width: 480px) 110px, 80px
+            ]]></var>
         </var>
     </vars>
 </view>
