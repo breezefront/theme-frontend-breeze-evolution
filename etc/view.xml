@@ -221,7 +221,8 @@
                 (min-width: 1024px) 145px,
                 (min-width: 768px) 125px,
                 (min-width: 640px) 170px,
-                (min-width: 480px) 110px, 80px
+                (min-width: 480px) 110px,
+                80px
             ]]></var>
         </var>
     </vars>
