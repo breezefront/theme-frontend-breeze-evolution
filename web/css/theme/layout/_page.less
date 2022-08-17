@@ -44,10 +44,22 @@
                 .right(@page-blob2__right);
             }
 
+            @media @media-xs-down {
+                &::before {
+                    .left(auto);
+                    .right(30px);
+                }
+            }
+
             .narrow-page:not(.narrow-page-reset) & {
                 &::before {
                     & when not (@page-blob__left = false) {
                         .left(@page-blob__left - 100px);
+
+                        @media @media-xs-down {
+                            .left(auto);
+                            .right(30px);
+                        }
                     }
                 }
             }
