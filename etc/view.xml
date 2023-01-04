@@ -163,6 +163,11 @@
             </image>
         </images>
     </media>
+    <vars module="Magento_Catalog">
+        <var name="magnifier">
+            <var name="enabled">true</var>
+        </var>
+    </vars>
     <vars module="Swissup_Breeze">
         <var name="sizes">
             <var name="category_page_grid"><![CDATA[
