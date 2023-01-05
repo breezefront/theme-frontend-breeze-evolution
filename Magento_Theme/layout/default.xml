@@ -3,7 +3,6 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <move element="navigation.wrapper" destination="header-wrapper" after="logo"/>
-        <move element="form.subscribe" destination="footer-top" before="-"/>
         <referenceContainer name="footer" remove="true"/>
 
         <referenceContainer name="footer-middle">
