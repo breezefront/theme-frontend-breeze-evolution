@@ -7,7 +7,7 @@
     }
 }
 
-& when not (@critical) {
+& when (@critical) {
     .page-main {
         & when (@page-blobs = true) {
             &::before,
@@ -19,7 +19,7 @@
                 .lib-css(color, @page-blob__color);
                 .lib-css(width, @page-blob__width);
                 .lib-css(height, @page-blob__height);
-                .breeze-icon(@page-blob__icon, @page-blob__width, @page-blob__height);
+                .breeze-icon-critical(@page-blob__icon, @page-blob__width, @page-blob__height);
             }
 
             &::before {
@@ -34,7 +34,7 @@
                 & when not (@page-blob2__icon = false) {
                     .lib-css(width, @page-blob2__width);
                     .lib-css(height, @page-blob2__height);
-                    .breeze-icon(@page-blob2__icon, @page-blob2__width, @page-blob2__height);
+                    .breeze-icon-critical(@page-blob2__icon, @page-blob2__width, @page-blob2__height);
                 }
                 .lib-css(color, @page-blob2__color);
                 .lib-css(transform, @page-blob2__transform);
