@@ -2,7 +2,7 @@
     "name": "swissup/theme-frontend-breeze-evolution",
     "description": "Breeze Evolution Theme",
     "type": "magento2-theme",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "license": "OSL-3.0",
     "autoload": {
         "files": [
@@ -10,6 +10,6 @@
         ]
     },
     "require": {
-        "swissup/theme-frontend-breeze-blank": "^2.1.0"
+        "swissup/theme-frontend-breeze-blank": "^2.3.2"
     }
 }
