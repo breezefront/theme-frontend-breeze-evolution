@@ -124,16 +124,18 @@
                 <height>340</height>
             </image>
 
-            <!-- These lists use category_page_grid fallback. Not need to declare srcset for them -->
-            <image id="related_products_list" type="small_image">
-                <width>325</width>
-                <height>325</height>
-            </image>
+            <!-- These lists always render image with width/2 -->
             <image id="recently_viewed_products_grid_content_widget" type="small_image">
-                <width>325</width>
-                <height>325</height>
+                <width>650</width>
+                <height>650</height>
             </image>
             <image id="recently_compared_products_grid_content_widget" type="small_image">
+                <width>650</width>
+                <height>650</height>
+            </image>
+
+            <!-- These lists use category_page_grid fallback. Not need to declare srcset for them -->
+            <image id="related_products_list" type="small_image">
                 <width>325</width>
                 <height>325</height>
             </image>
