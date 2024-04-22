@@ -7,6 +7,9 @@
         <referenceBlock name="breeze.scrollReveal">
             <arguments>
                 <argument name="enabled" xsi:type="boolean">true</argument>
+                <argument name="selectors" xsi:type="array">
+                    <item name="home-newsletter" xsi:type="string">.footer-top .newsletter .title, .footer-top .newsletter .content</item>
+                </argument>
             </arguments>
         </referenceBlock>
 
