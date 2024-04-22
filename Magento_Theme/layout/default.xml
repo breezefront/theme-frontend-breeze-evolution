@@ -3,8 +3,14 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <move element="navigation.wrapper" destination="header-wrapper" after="logo"/>
-        <referenceContainer name="footer" remove="true"/>
 
+        <referenceBlock name="breeze.scrollReveal">
+            <arguments>
+                <argument name="enabled" xsi:type="boolean">true</argument>
+            </arguments>
+        </referenceBlock>
+
+        <referenceContainer name="footer" remove="true"/>
         <referenceContainer name="footer-middle">
             <block class="Magento\Cms\Block\Block" name="footer_content" before="-">
                 <arguments>
