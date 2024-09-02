@@ -9,6 +9,9 @@
                 </arguments>
             </block>
         </referenceContainer>
-        <move element="contactForm" destination="footer-top"/>
+        <referenceContainer name="footer-top">
+            <container name="contactForm.wrapper" before="-" htmlTag="div" htmlClass="contact-wrapper"/>
+        </referenceContainer>
+        <move element="contactForm" destination="contactForm.wrapper"/>
     </body>
 </page>

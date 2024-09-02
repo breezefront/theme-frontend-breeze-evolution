@@ -5,7 +5,7 @@
             padding-right: @6;
         }
     }
-    .form.contact {
+    .contact-wrapper {
         .footer-top & {
             &:extend(.breeze-block-boxed);
             margin: -80px auto;
@@ -26,10 +26,12 @@
                         display: inline-block;
                         vertical-align: top;
                     }
-                    &.name {
+                    &.name:has(+ .email),
+                    &.email:has(+ .name) {
                         .margin-right(4%);
                     }
-                    &.email {
+                    &.name + .email,
+                    &.email + .name {
                         .margin-left(-5px);
                     }
                 }
