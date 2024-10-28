@@ -3,7 +3,7 @@
     "description": "Breeze Evolution Theme",
     "type": "magento2-theme",
     "version": "2.2.0",
-    "license": "OSL-3.0",
+    "license": "MIT",
     "autoload": {
         "files": [
             "registration.php"
