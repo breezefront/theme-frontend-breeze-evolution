@@ -263,15 +263,25 @@
 @swatch__border-offset: -4px;
 @swatch-options__min-height: @18;
 
+// TODO: remove these variables in 2025 according to
+// https://github.com/breezefront/theme-frontend-breeze-blank/blob/master/web/css/abstracts/variables/_swatches.less#L36
 @listing-swatch-wrapper__media-hidden: @media-lg-down;
 @listing-swatch-wrapper__margin: @1-5 0 @2;
 @listing-swatch-options__justify-content: center;
 @listing-swatch-options__margin-bottom: @1-5;
 @listing-swatch-options__min-height: @7-5;
-
 @listing-swatch__font-size: @2-5;
 @listing-swatch__size: @6;
 @listing-swatch__border-offset: -3px;
+// Keep this variables with values from above:
+@swatch-wrapper__listing__media-hidden: @listing-swatch-wrapper__media-hidden;
+@swatch-wrapper__listing__margin: @listing-swatch-wrapper__margin;
+@swatch-options__listing__justify-content: @listing-swatch-options__justify-content;
+@swatch-options__listing__margin-bottom: @listing-swatch-options__margin-bottom;
+@swatch-options__listing__min-height: @listing-swatch-options__min-height;
+@swatch__listing__font-size: @listing-swatch__font-size;
+@swatch__listing__size: @listing-swatch__size;
+@swatch__listing__border-offset: @listing-swatch__border-offset;
 
 // Reviews
 @rating__color: @gray-800;
