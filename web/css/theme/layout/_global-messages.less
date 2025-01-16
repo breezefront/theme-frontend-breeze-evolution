@@ -1,0 +1,13 @@
+& when (@critical) {
+    .message.global {
+        &.cookie {
+            &:extend(.container);
+            padding: 0;
+            width: auto;
+            .content {
+                --container-max-width: none;
+                --container-margin: 0;
+            }
+        }
+    }
+}
