@@ -11,3 +11,19 @@
         }
     }
 }
+
+& when not (@critical) {
+    .message.global.cookie {
+        &:extend(.transition);
+        &[style*="none"] {
+            transform: ~"translateY(calc(100% + @{4}))";
+            opacity: 0;
+        }
+    }
+    @starting-style {
+        .message.global.cookie {
+            transform: ~"translateY(calc(100% + @{4}))";
+            opacity: 0;
+        }
+    }
+}
