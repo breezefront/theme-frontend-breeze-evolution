@@ -13,7 +13,9 @@
             </arguments>
         </referenceBlock>
 
-        <referenceContainer name="footer" remove="true"/>
+        <move element="form.subscribe" destination="footer-top" before="-"/>
+        <referenceBlock name="copyright" remove="true"/>
+        <referenceBlock name="footer_links" remove="true"/>
         <referenceContainer name="footer-middle">
             <block class="Magento\Cms\Block\Block" name="footer_content" before="-">
                 <arguments>
