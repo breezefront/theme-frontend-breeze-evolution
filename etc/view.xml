@@ -166,6 +166,9 @@
         </images>
     </media>
     <vars module="Magento_Catalog">
+        <var name="gallery">
+            <var name="mode">slider</var> <!-- default/expanded/slider -->
+        </var>
         <var name="magnifier">
             <var name="enabled">true</var>
         </var>
