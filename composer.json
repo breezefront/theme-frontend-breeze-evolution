@@ -10,6 +10,6 @@
         ]
     },
     "require": {
-        "swissup/theme-frontend-breeze-blank": "^2.7.4"
+        "swissup/theme-frontend-breeze-blank": "^2.11.7"
     }
 }
