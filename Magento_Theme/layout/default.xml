@@ -13,6 +13,12 @@
             </arguments>
         </referenceBlock>
 
+        <referenceBlock name="breeze.viewTransition">
+            <arguments>
+                <argument name="enabled" xsi:type="boolean">true</argument>
+            </arguments>
+        </referenceBlock>
+
         <move element="form.subscribe" destination="footer-top" before="-"/>
         <referenceBlock name="copyright" remove="true"/>
         <referenceBlock name="footer_links" remove="true"/>
