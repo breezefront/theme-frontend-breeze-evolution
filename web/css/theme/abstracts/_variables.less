@@ -1,5 +1,6 @@
 @theme__brand-color: @black;
 @theme__dark-color: #000121;
+@theme__dark-color-primary: #000d3a;
 
 @respect-color-scheme: false;
 
@@ -64,7 +65,7 @@
 @header__border-width: 0 0 2px;
 @header__background: @white;
 @header-panel__dark: true;
-@header-panel__background: #000d3a;
+@header-panel__background: ~"rgb(var(--dark-bg-primary))";
 @header-panel-info__font-weight: 500;
 @header-panel-info__font-size: .9rem;
 @header-panel-info__letter-spacing: -.02rem;
@@ -74,14 +75,14 @@
 // Footer
 @footer__at-bottom: true;
 
-@footer-top__background: url(../images/wave-gray.svg) no-repeat 50% 0;
-@footer-top__padding: @32 0 @24;
-@footer-top-after__background: #f7f8f8;
+@footer-top__background: ~"rgb(var(--neutral-100)) padding-box";
+@footer-top__padding: 0 0 @24;
+@footer-top-after__mask: url(../images/wave-gray.svg) no-repeat 50% 0;
 
 @footer-middle__dark: true;
-@footer-middle__background: url(../images/wave-blue.svg) no-repeat 50% 0;
-@footer-middle__padding: @32 0 @8;
-@footer-middle-after__background: #000121;
+@footer-middle__background: ~"rgb(var(--dark-bg)) padding-box";
+@footer-middle__padding: @12 0 @8;
+@footer-middle-after__mask: url(../images/wave-blue.svg) no-repeat 50% 0;
 
 // Newsletter
 @footer-newsletter-title__mode: hero; // hidden|hero|false

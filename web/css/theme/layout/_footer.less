@@ -1,4 +1,17 @@
 & when (@critical) {
+    .page-footer {
+        &:has(.footer-middle) {
+            padding-top: 60px;
+        }
+        &:has(.footer-top) {
+            padding-top: 150px;
+        }
+        .block.newsletter {
+            .title {
+                padding-top: @4;
+            }
+        }
+    }
     .footer-top,
     .footer-middle {
         position: relative;
@@ -6,20 +19,15 @@
             z-index: -1;
             content: '';
             position: absolute;
-            top: 75px;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            inset: 0;
+            top: -75px;
         }
     }
     .footer-top::after {
-        top: 115px;
+        top: -150px;
     }
     .footer-middle {
-        margin-top: -20px;
-    }
-    .footer-top + .footer-middle {
-        margin-top: -72px;
+        z-index: 1;
     }
     .footer.content {
         padding: 0;
@@ -32,16 +40,17 @@
 
 & when not (@critical) {
     .footer-top::after {
-        .lib-css(background, @footer-top-after__background);
+        .lib-css(background, @footer-top__background);
+        .lib-css(mask, @footer-top-after__mask);
     }
     .footer-middle {
         & when (@footer-middle__dark) {
             .breeze-rgb(--link-color, @white);
             --link-alpha: .7;
         }
-        > div,
         &::after {
-            .lib-css(background, @footer-middle-after__background);
+            .lib-css(background, @footer-middle__background);
+            .lib-css(mask, @footer-middle-after__mask);
         }
     }
 }

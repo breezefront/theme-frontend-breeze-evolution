@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "sections": [
+    {
+      "id": "palette",
+      "name": "Color palette",
+      "settings": [
+        {
+          "id": "brand_color",
+          "label": "Brand Color",
+          "type": "color",
+          "default": "#000000",
+          "css_var": "--brand-color"
+        },
+        {
+          "id": "brand_color_accent",
+          "label": "Brand Color Accent",
+          "type": "color",
+          "default": "#000000",
+          "css_var": "--brand-hover-color"
+        },
+        {
+          "id": "brand_color_primary",
+          "label": "Brand Color Primary",
+          "type": "color",
+          "default": "#000d3a",
+          "css_var": "--dark-bg-primary"
+        },
+        {
+          "id": "dark_color",
+          "label": "Brand Color Secondary",
+          "type": "color",
+          "default": "#000121",
+          "css_var": "--dark-bg"
+        },
+        {
+          "id": "neutral_100",
+          "label": "Neutral 100",
+          "type": "color",
+          "default": "#f7f8f8",
+          "css_var": "--neutral-100"
+        },
+        {
+          "id": "base_color",
+          "label": "Text Color Primary",
+          "type": "color",
+          "default": "#111827",
+          "css_var": "--base-color"
+        }
+      ]
+    },
+    {
+      "id": "typography",
+      "name": "Typography",
+      "settings": [
+        {
+          "id": "base_font_size",
+          "label": "Font Size",
+          "type": "range",
+          "unit": "px",
+          "default": "16",
+          "min": "12",
+          "max": "24",
+          "step": "1",
+          "css_var": "--base-font-size"
+        },
+        {
+          "id": "base_line_height",
+          "label": "Line Height",
+          "type": "range",
+          "unit": "px",
+          "default": "24",
+          "min": "16",
+          "max": "42",
+          "step": "1",
+          "css_var": "--base-line-height"
+        }
+      ]
+    }
+  ]
+}
