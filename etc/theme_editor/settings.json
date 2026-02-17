@@ -13,13 +13,6 @@
           "css_var": "--brand-color"
         },
         {
-          "id": "brand_color_accent",
-          "label": "Brand Color Accent",
-          "type": "color",
-          "default": "#000000",
-          "css_var": "--brand-hover-color"
-        },
-        {
           "id": "brand_color_primary",
           "label": "Brand Color Primary",
           "type": "color",
