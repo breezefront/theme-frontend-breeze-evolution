@@ -23,7 +23,7 @@
           "unit": "px",
           "default": "4px",
           "min": "0",
-          "max": "20",
+          "max": "30",
           "css_var": "--base-border-radius"
         }
       ]
