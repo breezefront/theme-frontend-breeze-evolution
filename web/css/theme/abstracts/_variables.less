@@ -1,6 +1,7 @@
 @color__brand: @black;
 @color__brand-secondary: #000d3a;
 @color__inverted__brand: ~"color-mix(in srgb, var(--color-white) 80%, transparent)";
+@color__neutral-100: #f7f8f8;
 
 @dark__background: #000121;
 @base__inverted__background: @dark__background;
@@ -28,7 +29,7 @@
 @input__inverted__focus__background: ~"color-mix(in srgb, var(--base-color) 4%, transparent)";
 @input__inverted__border-color: ~"color-mix(in srgb, var(--base-color) 80%, transparent)";
 
-@button__hover__background: ~"color-mix(in srgb, var(--button-bg) 87%, var(--color-white))";
+@button__hover__background: ~"color-mix(in srgb, var(--button-bg) 90%, var(--color-white))";
 @button__inverted__color: ~"var(--color-neutral-900)";
 @button__inverted__background: ~"var(--color-neutral-50)";
 @button__inverted__hover__color: ~"var(--color-neutral-900)";
@@ -39,8 +40,8 @@
 @global-cookie-message__left: @4;
 @global-cookie-message__right: @4;
 @global-cookie-message__bottom: @4;
-@global-cookie-message__border-radius: @base__border-radius;
-@global-cookie-message__box-shadow: @modal__box-shadow;
+@global-cookie-message__border-radius: ~"var(--base-border-radius)";
+@global-cookie-message__box-shadow: ~"var(--popover-box-shadow)";
 
 @message__position: fixed;
 @message__box-shadow: ~"0 4px 7px 0 rgb(0 0 0 / 9%)";
@@ -68,14 +69,16 @@
 // Footer
 @footer__at-bottom: true;
 
-@footer-top__background: ~"var(--color-neutral-100) padding-box";
+@footer-top__background: ~"var(--color-neutral-100)";
+@footer-top__background-origin: padding-box;
 @footer-top__padding: 0 0 @24;
-@footer-top-after__mask: url(../images/wave-gray.svg) no-repeat 50% 0;
+@footer-top__mask: url(../images/wave-gray.svg) no-repeat 50% 0;
 
 @footer-middle__dark: true;
-@footer-middle__background: ~"var(--dark-bg) padding-box";
+@footer-middle__background: ~"var(--dark-bg)";
+@footer-middle__background-origin: padding-box;
 @footer-middle__padding: @12 0 @8;
-@footer-middle-after__mask: url(../images/wave-blue.svg) no-repeat 50% 0;
+@footer-middle__mask: url(../images/wave-blue.svg) no-repeat 50% 0;
 
 // Newsletter
 @footer-newsletter-title__mode: hero; // hidden|hero|false
@@ -103,11 +106,11 @@
 // Breadcrumbs
 @breadcrumbs__wrap: false;
 @breadcrumbs__min-height: @16;
-@breadcrumbs__color: @muted__color;
+@breadcrumbs__color: ~"var(--muted-color)";
 @breadcrumbs__font-size: .85rem;
 @breadcrumbs__padding-top: @5;
 @breadcrumbs__padding-bottom: @5;
-@breadcrumbs-item__hover__color: @gray-600;
+@breadcrumbs-item__hover__color: ~"var(--base-color)";
 @breadcrumbs-item__active__font-weight: 400;
 @breadcrumbs-item-home__icon: @icon-s-home;
 
@@ -118,7 +121,7 @@
 @block-title__line-height: @6;
 @block-title__font-size: @5;
 @block-title__font-weight: 700;
-@block-title__border: 2px solid @gray-800;
+@block-title__border: ~"2px solid var(--color-neutral-800)";
 @block-title__border-width: 0 0 2px;
 
 @content-block-title__font-size: @6;
@@ -150,13 +153,13 @@
 @boxed-block-title__border: 0;
 
 // Category
-@category-description__color: @gray-600;
+@category-description__color: ~"color-mix(in srgb, var(--base-color) 85%, transparent)";
 @category-description__font-size: @4-5;
 @category-description__line-height: @7;
 @category-description__margin: -@2 0 @4;
 
 // Layered navigation
-@layered-item__color: @gray-700;
+@layered-item__color: ~"var(--color-neutral-700)";
 
 // Listing
 @listing-item__out-of-stock__filter: ~"grayscale(1)";
@@ -165,7 +168,7 @@
 
 @listing-grid__row-gap: @6;
 @listing-grid__media-xl__columns: 3;
-@listing-grid__media-xl-1column__columns: 4;
+@listing-grid__media-xl__1column__columns: 4;
 @listing-grid-item__price-aside-name: true;
 @listing-grid-item__reveal-on-hover__aspect-ratio: 1;
 @listing-grid-item__hover__background: false;
@@ -191,7 +194,7 @@
 @listing-list-item__gap: @5;
 @listing-list-image__width: 35%;
 
-@toolbar__color: @gray-500;
+@toolbar__color: ~"var(--color-neutral-500)";
 @toolbar-modes__border: false;
 
 @ajaxpro-quick-view__position: actions;
@@ -199,18 +202,17 @@
 
 // Product page
 @product-image__filter: ~"contrast(94%)";
-// @product-image__border-radius: @1;
 @product-wrapper__gap: @12;
 
 @product-info__sticky: true;
 
 @product-box-tocart__margin: false;
 @product-box-tocart__padding: @5 0;
-@product-box-tocart__border: 2px solid @muted__background;
+@product-box-tocart__border: ~"2px solid var(--muted-bg)";
 @product-box-tocart__border-width: 2px 0;
 
 @product-options-wrapper__padding: @5 0 @2;
-@product-options-wrapper__border: 2px solid @muted__background;
+@product-options-wrapper__border: ~"2px solid var(--muted-bg)";
 @product-options-wrapper__border-width: 2px 0 0;
 
 @bz-gallery-thumb__margin: @4 0 0;
@@ -256,30 +258,18 @@
 @swatch__border-radius: 999px;
 @swatch__border-offset: -4px;
 @swatch-options__min-height: @18;
-
-// TODO: remove these variables in 2025 according to
-// https://github.com/breezefront/theme-frontend-breeze-blank/blob/master/web/css/abstracts/variables/_swatches.less#L36
-@listing-swatch-wrapper__media-hidden: @media-lg-down;
-@listing-swatch-wrapper__margin: @1-5 0 @2;
-@listing-swatch-options__justify-content: center;
-@listing-swatch-options__margin-bottom: @1-5;
-@listing-swatch-options__min-height: @7-5;
-@listing-swatch__font-size: @2-5;
-@listing-swatch__size: @6;
-@listing-swatch__border-offset: -3px;
-// Keep this variables with values from above:
-@swatch-wrapper__listing__media-hidden: @listing-swatch-wrapper__media-hidden;
-@swatch-wrapper__listing__margin: @listing-swatch-wrapper__margin;
-@swatch-options__listing__justify-content: @listing-swatch-options__justify-content;
-@swatch-options__listing__margin-bottom: @listing-swatch-options__margin-bottom;
-@swatch-options__listing__min-height: @listing-swatch-options__min-height;
-@swatch__listing__font-size: @listing-swatch__font-size;
-@swatch__listing__size: @listing-swatch__size;
-@swatch__listing__border-offset: @listing-swatch__border-offset;
+@swatch-wrapper__listing__media-hidden: @media-lg-down;
+@swatch-wrapper__listing__margin: @1-5 0 @2;
+@swatch-options__listing__justify-content: center;
+@swatch-options__listing__margin-bottom: @1-5;
+@swatch-options__listing__min-height: @7-5;
+@swatch__listing__font-size: @2-5;
+@swatch__listing__size: @6;
+@swatch__listing__border-offset: -3px;
 
 // Reviews
-@rating__color: @gray-800;
-@review-action__color: @gray-900;
+@rating-icon__color: ~"var(--base-color)";
+@review-action__color: ~"var(--base-color)";
 
 // Page
 @page-title-wrapper-without-breadcrumbs__margin-top: @5;
@@ -316,5 +306,4 @@
 
 .breeze-tokens() {
     .lib-rgb(--color-brand-secondary, @color__brand-secondary);
-    .lib-rgb(--color-neutral-100, #f7f8f8);
 }

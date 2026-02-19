@@ -40,17 +40,18 @@
 
 & when not (@critical) {
     .footer-top::after {
-        .lib-css(background, @footer-top__background);
-        .lib-css(mask, @footer-top-after__mask);
+        background: var(--footer-top-bg);
+        .lib-css(background-origin, @footer-top__background-origin);
+        .lib-css(mask, @footer-top__mask);
     }
     .footer-middle {
         & when (@footer-middle__dark) {
-            .breeze-rgb(--link-color, @white);
-            --link-alpha: .7;
+            --link-color: var(--base-color);
         }
         &::after {
-            .lib-css(background, @footer-middle__background);
-            .lib-css(mask, @footer-middle-after__mask);
+            background: var(--footer-middle-bg);
+            .lib-css(background-origin, @footer-middle__background-origin);
+            .lib-css(mask, @footer-middle__mask);
         }
     }
 }
