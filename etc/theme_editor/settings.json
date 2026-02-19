@@ -2,73 +2,255 @@
   "version": "1.0",
   "sections": [
     {
-      "id": "palette",
-      "name": "Color palette",
+      "id": "layout",
+      "name": "Layout",
+      "order": 10,
       "settings": [
         {
-          "id": "brand_color",
-          "label": "Brand Color",
-          "type": "color",
-          "default": "#000000",
-          "css_var": "--brand-color"
+          "id":  "max-width",
+          "label": "Container Width",
+          "type": "range",
+          "unit": "px",
+          "default": "1260px",
+          "min": "1024",
+          "max": "1920",
+          "css_var": "--container-max-width"
         },
         {
-          "id": "brand_color_primary",
-          "label": "Brand Color Primary",
-          "type": "color",
-          "default": "#000d3a",
-          "css_var": "--dark-bg-primary"
-        },
-        {
-          "id": "dark_color",
-          "label": "Brand Color Secondary",
-          "type": "color",
-          "default": "#000121",
-          "css_var": "--dark-bg"
-        },
-        {
-          "id": "neutral_100",
-          "label": "Neutral 100",
-          "type": "color",
-          "default": "#f7f8f8",
-          "css_var": "--neutral-100"
-        },
-        {
-          "id": "base_color",
-          "label": "Text Color Primary",
-          "type": "color",
-          "default": "#111827",
-          "css_var": "--base-color"
+          "id":  "border-radius",
+          "label": "Roundness",
+          "type": "range",
+          "unit": "px",
+          "default": "4px",
+          "min": "0",
+          "max": "20",
+          "css_var": "--base-border-radius"
         }
       ]
     },
     {
       "id": "typography",
       "name": "Typography",
+      "order": 20,
       "settings": [
         {
-          "id": "base_font_size",
+          "id":  "base-color",
+          "label": "Text Color",
+          "type": "color",
+          "default": "#1e2939",
+          "css_var": "--base-color",
+          "palette": "default"
+        },
+        {
+          "id":  "link-color",
+          "label": "Link Color",
+          "type": "color",
+          "default": "#3160e2",
+          "css_var": "--link-color",
+          "palette": "default"
+        },
+        {
+          "id":  "font-size",
           "label": "Font Size",
           "type": "range",
           "unit": "px",
-          "default": "16",
+          "default": "16px",
           "min": "12",
-          "max": "24",
-          "step": "1",
+          "max": "20",
           "css_var": "--base-font-size"
         },
         {
-          "id": "base_line_height",
+          "id":  "line-height",
           "label": "Line Height",
           "type": "range",
           "unit": "px",
-          "default": "24",
+          "default": "24px",
           "min": "16",
-          "max": "42",
-          "step": "1",
+          "max": "36",
           "css_var": "--base-line-height"
         }
       ]
+    },
+    {
+      "id": "buttons",
+      "name": "Buttons",
+      "order": 30,
+      "settings": [
+        {
+          "id":  "button-bg",
+          "label": "Primary Button Background",
+          "type": "color",
+          "default": "#155dfc",
+          "css_var": "--button-bg",
+          "palette": "default"
+        },
+        {
+          "id":  "button-color",
+          "label": "Primary Button Color",
+          "type": "color",
+          "default": "#ffffff",
+          "css_var": "--button-color",
+          "palette": "default"
+        },
+        {
+          "id":  "button-secondary-bg",
+          "label": "Secondary Button Background",
+          "type": "color",
+          "default": "#e5e7eb",
+          "css_var": "--button-secondary-bg",
+          "palette": "default"
+        },
+        {
+          "id":  "button-secondary-color",
+          "label": "Secondary Button Color",
+          "type": "color",
+          "default": "#464f5d",
+          "css_var": "--button-secondary-color",
+          "palette": "default"
+        }
+      ]
     }
-  ]
+  ],
+  "palettes": {
+    "default": {
+      "id": "default",
+      "label": "Default Color Palette",
+      "groups": {
+        "brand": {
+          "id": "brand",
+          "label": "Brand Colors",
+          "colors": [
+            {
+              "id": "primary",
+              "label": "Primary",
+              "description": "Main brand color for buttons and key elements",
+              "css_var": "--color-brand",
+              "default": "#000000"
+            },
+            {
+              "id": "secondary",
+              "label": "Secondary",
+              "description": "Secondary brand color for header color",
+              "css_var": "--color-brand-secondary",
+              "default": "#000d3a"
+            }
+          ]
+        },
+        "neutral": {
+          "id": "neutral",
+          "label": "Neutral Colors",
+          "colors": [
+            {
+              "id": "white",
+              "label": "White",
+              "css_var": "--color-white",
+              "default": "#ffffff"
+            },
+            {
+              "id": "50",
+              "label": "Neutral 50",
+              "css_var": "--color-neutral-50",
+              "default": "#f9fafb"
+            },
+            {
+              "id": "100",
+              "label": "Neutral 100",
+              "css_var": "--color-neutral-100",
+              "default": "#f7f8f8"
+            },
+            {
+              "id": "200",
+              "label": "Neutral 200",
+              "css_var": "--color-neutral-200",
+              "default": "#e5e7eb"
+            },
+            {
+              "id": "300",
+              "label": "Neutral 300",
+              "css_var": "--color-neutral-300",
+              "default": "#d1d5dc"
+            },
+            {
+              "id": "400",
+              "label": "Neutral 400",
+              "css_var": "--color-neutral-400",
+              "default": "#99a1af"
+            },
+            {
+              "id": "500",
+              "label": "Neutral 500",
+              "css_var": "--color-neutral-500",
+              "default": "#6a7282"
+            },
+            {
+              "id": "600",
+              "label": "Neutral 600",
+              "css_var": "--color-neutral-600",
+              "default": "#4a5565"
+            },
+            {
+              "id": "700",
+              "label": "Neutral 700",
+              "css_var": "--color-neutral-700",
+              "default": "#364153"
+            },
+            {
+              "id": "800",
+              "label": "Neutral 800",
+              "css_var": "--color-neutral-800",
+              "default": "#1e2939"
+            },
+            {
+              "id": "900",
+              "label": "Neutral 900",
+              "css_var": "--color-neutral-900",
+              "default": "#101828"
+            },
+            {
+              "id": "950",
+              "label": "Neutral 950",
+              "css_var": "--color-neutral-950",
+              "default": "#030712"
+            },
+            {
+              "id": "black",
+              "label": "Black",
+              "css_var": "--color-black",
+              "default": "#000000"
+            }
+          ]
+        },
+        "utility": {
+          "id": "utility",
+          "label": "Utility Colors",
+          "colors": [
+            {
+              "id": "blue",
+              "label": "Blue",
+              "css_var": "--color-blue",
+              "default": "#3160e2"
+            },
+            {
+              "id": "green",
+              "label": "Green",
+              "css_var": "--color-green",
+              "default": "#008236"
+            },
+            {
+              "id": "red",
+              "label": "Red",
+              "css_var": "--color-red",
+              "default": "#c10007"
+            },
+            {
+              "id": "yellow",
+              "label": "Yellow",
+              "css_var": "--color-yellow",
+              "default": "#fdc700"
+            }
+          ]
+        }
+      }
+    }
+  }
 }
