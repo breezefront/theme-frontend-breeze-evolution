@@ -96,7 +96,7 @@
           "id":  "button-secondary-bg",
           "label": "Secondary Button Background",
           "type": "color",
-          "default": "var(--subtle-color)",
+          "default": "#e8e9eb",
           "css_var": "--button-secondary-bg",
           "palette": "default"
         },
@@ -104,7 +104,7 @@
           "id":  "button-secondary-color",
           "label": "Secondary Button Color",
           "type": "color",
-          "default": "#1e2939a8",
+          "default": "#6b727c",
           "css_var": "--button-secondary-color",
           "palette": "default"
         }
