@@ -109,6 +109,55 @@
           "palette": "default"
         }
       ]
+    },
+    {
+      "id": "forms",
+      "name": "Forms",
+      "order": 40,
+      "settings": [
+        {
+          "id":  "input-bg",
+          "label": "Input Background",
+          "type": "color",
+          "default": "#ffffff",
+          "css_var": "--input-bg",
+          "palette": "default"
+        },
+        {
+          "id":  "input-focus-bg",
+          "label": "Input Focus Background",
+          "type": "color",
+          "default": "#1e2939",
+          "css_var": "--input-focus-bg",
+          "palette": "default"
+        },
+        {
+          "id":  "input-border-width",
+          "label": "Input Border Width",
+          "type": "range",
+          "default": "2px",
+          "unit": "px",
+          "min": 0,
+          "max": 5,
+          "css_var": "--input-border-width"
+        },
+        {
+          "id":  "input-border-color",
+          "label": "Input Border Color",
+          "type": "color",
+          "default": "#101828",
+          "css_var": "--input-border-color",
+          "palette": "default"
+        },
+        {
+          "id":  "input-outline-color",
+          "label": "Input Focus Ring Color",
+          "type": "color",
+          "default": "#000",
+          "css_var": "--input-outline-color",
+          "palette": "default"
+        }
+      ]
     }
   ],
   "palettes": {
