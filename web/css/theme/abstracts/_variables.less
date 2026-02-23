@@ -1,6 +1,6 @@
 @color__brand: @black;
 @color__brand-secondary: #000d3a;
-@color__inverted__brand: ~"color-mix(in srgb, var(--color-white) 80%, transparent)";
+@color__inverted__brand: ~"color-mix(in oklch, var(--color-white) 80%, transparent)";
 @color__neutral-100: #f7f8f8;
 
 @base__border-radius: @1;
@@ -23,11 +23,11 @@
 // Forms
 @input__border-width: 2px;
 @input__border-color: ~"var(--color-neutral-900)";
-@input__focus__background: ~"color-mix(in srgb, var(--base-color) 4%, transparent)";
-@input__inverted__focus__background: ~"color-mix(in srgb, var(--base-color) 4%, transparent)";
-@input__inverted__border-color: ~"color-mix(in srgb, var(--base-color) 40%, transparent)";
+@input__focus__background: ~"color-mix(in oklch, var(--base-color) 4%, transparent)";
+@input__inverted__focus__background: ~"color-mix(in oklch, var(--base-color) 4%, transparent)";
+@input__inverted__border-color: ~"color-mix(in oklch, var(--base-color) 40%, transparent)";
 
-@button__hover__background: ~"color-mix(in srgb, var(--button-bg) 90%, var(--color-white))";
+@button__hover__background: ~"color-mix(in oklch, var(--button-bg) 77%, var(--color-white))";
 @button__inverted__color: ~"var(--color-neutral-900)";
 @button__inverted__background: ~"var(--color-neutral-50)";
 @button__inverted__hover__color: ~"var(--color-neutral-900)";
@@ -68,13 +68,13 @@
 @footer__at-bottom: true;
 
 @footer-top__background: ~"var(--color-neutral-100)";
-@footer-top__inverted__background: ~"color-mix(in oklab, var(--color-neutral-950) 18%, var(--dark-bg))";
+@footer-top__inverted__background: ~"color-mix(in oklch, var(--color-neutral-950) 18%, var(--dark-bg))";
 @footer-top__background-origin: padding-box;
 @footer-top__padding: 0 0 @24;
 @footer-top__mask: url(../images/wave-gray.svg) no-repeat 50% 0;
 
 @footer-middle__dark: true;
-@footer-middle__background: ~"color-mix(in oklab, var(--color-brand-secondary) 80%, var(--color-black))";
+@footer-middle__background: ~"color-mix(in oklch, var(--color-brand-secondary) 80%, var(--color-black))";
 @footer-middle__background-origin: padding-box;
 @footer-middle__padding: @12 0 @8;
 @footer-middle__mask: url(../images/wave-blue.svg) no-repeat 50% 0;
@@ -86,7 +86,7 @@
 @footer-newsletter-input__border-color: @footer-newsletter-input__background;
 
 // Navigation
-@navigation-item-level0__color: ~"color-mix(in oklab, var(--color-brand-secondary) 92%, transparent)";
+@navigation-item-level0__color: ~"color-mix(in oklch, var(--color-brand-secondary) 92%, transparent)";
 @navigation-item-level0__font-weight: 600;
 
 // Minisearch
@@ -152,7 +152,7 @@
 @boxed-block-title__border: 0;
 
 // Category
-@category-description__color: ~"color-mix(in srgb, var(--base-color) 85%, transparent)";
+@category-description__color: ~"color-mix(in oklch, var(--base-color) 85%, transparent)";
 @category-description__font-size: @4-5;
 @category-description__line-height: @7;
 @category-description__margin: -@2 0 @4;
@@ -181,7 +181,7 @@
 // Variables below are used when @listing-grid-item-actions-primary__position is absolute
 @listing-grid-item-tocart__absolute__color: ~"var(--popover-color)";
 @listing-grid-item-tocart__absolute__background: ~"var(--popover-bg)";
-@listing-grid-item-tocart__absolute__hover__background: ~"color-mix(in srgb, var(--popover-bg) 94%, transparent)";
+@listing-grid-item-tocart__absolute__hover__background: ~"color-mix(in oklch, var(--popover-bg) 94%, transparent)";
 @listing-grid-item-tocart__absolute__border-color: ~"var(--popover-bg)";
 @listing-grid-item-tocart__absolute__box-shadow: @shadow-sm-around;
 @listing-grid-item-tocart__absolute__font-weight: 600;
@@ -280,7 +280,7 @@
 @page-blob__icon: '../images/blob.svg';
 @page-blob__width: 557px;
 @page-blob__height: 601px;
-@page-blob__color: ~"color-mix(in oklab, var(--base-color) 2.5%, transparent)";
+@page-blob__color: ~"color-mix(in oklch, var(--base-color) 2.5%, transparent)";
 @page-blob__top: -150px;
 @page-blob__bottom: false;
 @page-blob__left: -130px;
