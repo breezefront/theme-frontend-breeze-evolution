@@ -1,6 +1,7 @@
 @color__brand: @black;
 @color__brand-secondary: #000d3a;
 @color__inverted__brand: ~"color-mix(in oklch, var(--color-white) 80%, transparent)";
+@color__inverted__brand-secondary: ~"color-mix(in oklch, var(--color-white) 30%, var(--base-bg))";
 @color__neutral-100: #f7f8f8;
 
 @base__border-radius: @1;
@@ -53,9 +54,9 @@
 @message-error__background: @red-100;
 
 // Header
-@header__border: 2px solid #eff3f6;
+@header__border: ~"2px solid color-mix(in oklch, var(--color-brand-secondary) 5%, transparent)";
 @header__border-width: 0 0 2px;
-@header__background: @white;
+@header__background: ~"var(--base-bg)";
 @header-panel__dark: true;
 @header-panel__background: ~"var(--color-brand-secondary)";
 @header-panel-info__font-weight: 500;
@@ -67,8 +68,7 @@
 // Footer
 @footer__at-bottom: true;
 
-@footer-top__background: ~"var(--color-neutral-100)";
-@footer-top__inverted__background: ~"color-mix(in oklch, var(--color-neutral-950) 18%, var(--dark-bg))";
+@footer-top__background: ~"color-mix(in oklch, var(--base-color) 3%, var(--base-bg))";
 @footer-top__background-origin: padding-box;
 @footer-top__padding: 0 0 @24;
 @footer-top__mask: url(../images/wave-gray.svg) no-repeat 50% 0;
@@ -82,11 +82,12 @@
 // Newsletter
 @footer-newsletter-title__mode: hero; // hidden|hero|false
 @footer-newsletter-input-icon: @icon-mail;
-@footer-newsletter-input__background: @gray-200;
+@footer-newsletter-input__background: ~"color-mix(in oklch, var(--base-color) 10%, var(--base-bg))";
 @footer-newsletter-input__border-color: @footer-newsletter-input__background;
 
 // Navigation
 @navigation-item-level0__color: ~"color-mix(in oklch, var(--color-brand-secondary) 92%, transparent)";
+@navigation-item-level0__inverted__color: ~"color-mix(in oklch, var(--color-brand-secondary) 45%, var(--base-color))";
 @navigation-item-level0__font-weight: 600;
 
 // Minisearch
@@ -120,7 +121,7 @@
 @block-title__line-height: @6;
 @block-title__font-size: @5;
 @block-title__font-weight: 700;
-@block-title__border: ~"2px solid var(--color-neutral-800)";
+@block-title__border: ~"2px solid var(--base-color)";
 @block-title__border-width: 0 0 2px;
 
 @content-block-title__font-size: @6;
@@ -158,7 +159,7 @@
 @category-description__margin: -@2 0 @4;
 
 // Layered navigation
-@layered-item__color: ~"var(--color-neutral-700)";
+@layered-item__color: ~"color-mix(in oklch, var(--base-color) 88%, transparent)";
 
 // Listing
 @listing-item__out-of-stock__filter: ~"grayscale(1)";
@@ -193,7 +194,7 @@
 @listing-list-item__gap: @5;
 @listing-list-image__width: 35%;
 
-@toolbar__color: ~"var(--color-neutral-500)";
+@toolbar__color: ~"var(--muted-color)";
 @toolbar-modes__border: false;
 
 @ajaxpro-quick-view__position: actions;
@@ -221,10 +222,9 @@
 @tab-toggler__padding: @5 0;
 @tab-toggler__font-size: @6;
 @tab-toggler__font-weight: bold;
-@tab-toggler__color: @zinc-500;
-@tab-toggler__hover__color: @gray-600;
+@tab-toggler__color: ~"var(--muted-color)";
 @tab-toggler__hover__background: false;
-@tab-toggler__active__color: @gray-800;
+@tab-toggler__active__color: ~"var(--base-color)";
 @tab-counter__display: none;
 
 @tab-content__padding: @1 0;
@@ -237,14 +237,14 @@
 @tab-toggler__horizontal-active__border-color: @tab-toggler__hover__color;
 @tab-content__horizontal__margin: -2px 0 0;
 @tab-content__horizontal__padding: @10 0 @4;
-@tab-content__horizontal__border: 2px solid @muted__background;
+@tab-content__horizontal__border: 2px solid ~"var(--muted-bg)";
 @tab-content__horizontal__border-width: 2px 0 0;
 
 // Price
-@listing-price__color: @gray-700;
+@listing-price__color: ~"color-mix(in oklch, var(--base-color) 80%, transparent)";
 @price-normal-label__display: none;
 @price-minimal__display: none;
-@price-old__color: @gray-500;
+@price-old__color: ~"color-mix(in oklch, var(--base-color) 65%, transparent)";
 @price-old__text-decoration: line-through;
 @price-old-label__display: none;
 
@@ -306,7 +306,9 @@
 .breeze-tokens() {
     .lib-rgb(--color-brand-secondary, @color__brand-secondary);
 }
-
 .breeze-tokens-inverted() {
-    .lib-rgb(--footer-top-bg, @footer-top__inverted__background);
+    .lib-rgb(--color-brand-secondary, @color__inverted__brand-secondary);
+}
+.breeze-tokens-inverted-reset() {
+    .lib-rgb(--color-brand-secondary, @color__brand-secondary);
 }
