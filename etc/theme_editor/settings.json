@@ -127,7 +127,7 @@
           "id":  "input-focus-bg",
           "label": "Input Focus Background",
           "type": "color",
-          "default": "#1e2939",
+          "default": "#f6f7f7",
           "css_var": "--input-focus-bg",
           "palette": "default"
         },
