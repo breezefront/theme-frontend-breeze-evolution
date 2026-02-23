@@ -2,33 +2,6 @@
   "version": "1.0",
   "sections": [
     {
-      "id": "layout",
-      "name": "Layout",
-      "order": 10,
-      "settings": [
-        {
-          "id":  "max-width",
-          "label": "Container Width",
-          "type": "range",
-          "unit": "px",
-          "default": "1260px",
-          "min": "1024",
-          "max": "1920",
-          "css_var": "--container-max-width"
-        },
-        {
-          "id":  "border-radius",
-          "label": "Roundness",
-          "type": "range",
-          "unit": "px",
-          "default": "4px",
-          "min": "0",
-          "max": "30",
-          "css_var": "--base-border-radius"
-        }
-      ]
-    },
-    {
       "id": "typography",
       "name": "Typography",
       "order": 20,
@@ -130,6 +103,16 @@
           "default": "#f6f7f7",
           "css_var": "--input-focus-bg",
           "palette": "default"
+        },
+        {
+          "id":  "input-border-radius",
+          "label": "Input Border Radius",
+          "type": "range",
+          "default": "4px",
+          "unit": "px",
+          "min": 0,
+          "max": 30,
+          "css_var": "--input-border-radius"
         },
         {
           "id":  "input-border-width",
