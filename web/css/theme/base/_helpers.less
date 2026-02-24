@@ -21,11 +21,13 @@
         height: 66px;
     }
     .bg-wave-top::before {
-        background: url(../images/wave-white-top.svg) no-repeat 50% 0;
+        .lib-css(mask, url(../images/wave-white-top.svg) no-repeat 50% 0);
+        background: var(--base-bg);
         top: -2px;
     }
     .bg-wave-bottom::after {
-        background: url(../images/wave-white.svg) no-repeat 50% 100%;
+        .lib-css(mask, url(../images/wave-white.svg) no-repeat 50% 100%);
+        background: var(--base-bg);
         bottom: -2px;
     }
 }
