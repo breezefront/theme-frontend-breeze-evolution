@@ -7,40 +7,40 @@
       "order": 20,
       "settings": [
         {
-          "id":  "base-color",
+          "id": "base-color",
           "label": "Text Color",
           "type": "color",
           "default": "#1e2939",
-          "css_var": "--base-color",
+          "property": "--base-color",
           "palette": "default"
         },
         {
-          "id":  "link-color",
+          "id": "link-color",
           "label": "Link Color",
           "type": "color",
           "default": "#3160e2",
-          "css_var": "--link-color",
+          "property": "--link-color",
           "palette": "default"
         },
         {
-          "id":  "font-size",
+          "id": "font-size",
           "label": "Font Size",
           "type": "range",
           "unit": "px",
           "default": "16px",
           "min": "12",
           "max": "20",
-          "css_var": "--base-font-size"
+          "property": "--base-font-size"
         },
         {
-          "id":  "line-height",
+          "id": "line-height",
           "label": "Line Height",
           "type": "range",
           "unit": "px",
           "default": "24px",
           "min": "16",
           "max": "36",
-          "css_var": "--base-line-height"
+          "property": "--base-line-height"
         }
       ]
     },
@@ -50,35 +50,35 @@
       "order": 30,
       "settings": [
         {
-          "id":  "button-bg",
+          "id": "button-bg",
           "label": "Primary Button Background",
           "type": "color",
           "default": "#000000",
-          "css_var": "--button-bg",
+          "property": "--button-bg",
           "palette": "default"
         },
         {
-          "id":  "button-color",
+          "id": "button-color",
           "label": "Primary Button Color",
           "type": "color",
           "default": "#ffffff",
-          "css_var": "--button-color",
+          "property": "--button-color",
           "palette": "default"
         },
         {
-          "id":  "button-secondary-bg",
+          "id": "button-secondary-bg",
           "label": "Secondary Button Background",
           "type": "color",
           "default": "#e8e9eb",
-          "css_var": "--button-secondary-bg",
+          "property": "--button-secondary-bg",
           "palette": "default"
         },
         {
-          "id":  "button-secondary-color",
+          "id": "button-secondary-color",
           "label": "Secondary Button Color",
           "type": "color",
           "default": "#6b727c",
-          "css_var": "--button-secondary-color",
+          "property": "--button-secondary-color",
           "palette": "default"
         }
       ]
@@ -89,55 +89,55 @@
       "order": 40,
       "settings": [
         {
-          "id":  "input-bg",
+          "id": "input-bg",
           "label": "Input Background",
           "type": "color",
           "default": "#ffffff",
-          "css_var": "--input-bg",
+          "property": "--input-bg",
           "palette": "default"
         },
         {
-          "id":  "input-focus-bg",
+          "id": "input-focus-bg",
           "label": "Input Focus Background",
           "type": "color",
           "default": "#f6f7f7",
-          "css_var": "--input-focus-bg",
+          "property": "--input-focus-bg",
           "palette": "default"
         },
         {
-          "id":  "input-border-radius",
+          "id": "input-border-radius",
           "label": "Input Border Radius",
           "type": "range",
           "default": "4px",
           "unit": "px",
           "min": 0,
           "max": 30,
-          "css_var": "--input-border-radius"
+          "property": "--input-border-radius"
         },
         {
-          "id":  "input-border-width",
+          "id": "input-border-width",
           "label": "Input Border Width",
           "type": "range",
           "default": "2px",
           "unit": "px",
           "min": 0,
           "max": 5,
-          "css_var": "--input-border-width"
+          "property": "--input-border-width"
         },
         {
-          "id":  "input-border-color",
+          "id": "input-border-color",
           "label": "Input Border Color",
           "type": "color",
           "default": "#101828",
-          "css_var": "--input-border-color",
+          "property": "--input-border-color",
           "palette": "default"
         },
         {
-          "id":  "input-outline-color",
+          "id": "input-outline-color",
           "label": "Input Focus Ring Color",
           "type": "color",
           "default": "#000",
-          "css_var": "--input-outline-color",
+          "property": "--input-outline-color",
           "palette": "default"
         }
       ]
