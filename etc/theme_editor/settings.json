@@ -7,6 +7,14 @@
       "order": 20,
       "settings": [
         {
+          "id": "body-bg",
+          "label": "Body Background",
+          "type": "color",
+          "default": "#ffffff",
+          "property": "--body-bg",
+          "palette": "default"
+        },
+        {
           "id": "base-color",
           "label": "Text Color",
           "type": "color",
