@@ -156,14 +156,14 @@
               "id": "primary",
               "label": "Primary",
               "description": "Main brand color for buttons and key elements",
-              "css_var": "--color-brand",
+              "property": "--color-brand",
               "default": "#000000"
             },
             {
               "id": "secondary",
               "label": "Secondary",
               "description": "Secondary brand color for header color",
-              "css_var": "--color-brand-secondary",
+              "property": "--color-brand-secondary",
               "default": "#000d3a"
             }
           ]
@@ -175,79 +175,79 @@
             {
               "id": "white",
               "label": "White",
-              "css_var": "--color-white",
+              "property": "--color-white",
               "default": "#ffffff"
             },
             {
               "id": "50",
               "label": "Neutral 50",
-              "css_var": "--color-neutral-50",
+              "property": "--color-neutral-50",
               "default": "#f9fafb"
             },
             {
               "id": "100",
               "label": "Neutral 100",
-              "css_var": "--color-neutral-100",
+              "property": "--color-neutral-100",
               "default": "#f7f8f8"
             },
             {
               "id": "200",
               "label": "Neutral 200",
-              "css_var": "--color-neutral-200",
+              "property": "--color-neutral-200",
               "default": "#e5e7eb"
             },
             {
               "id": "300",
               "label": "Neutral 300",
-              "css_var": "--color-neutral-300",
+              "property": "--color-neutral-300",
               "default": "#d1d5dc"
             },
             {
               "id": "400",
               "label": "Neutral 400",
-              "css_var": "--color-neutral-400",
+              "property": "--color-neutral-400",
               "default": "#99a1af"
             },
             {
               "id": "500",
               "label": "Neutral 500",
-              "css_var": "--color-neutral-500",
+              "property": "--color-neutral-500",
               "default": "#6a7282"
             },
             {
               "id": "600",
               "label": "Neutral 600",
-              "css_var": "--color-neutral-600",
+              "property": "--color-neutral-600",
               "default": "#4a5565"
             },
             {
               "id": "700",
               "label": "Neutral 700",
-              "css_var": "--color-neutral-700",
+              "property": "--color-neutral-700",
               "default": "#364153"
             },
             {
               "id": "800",
               "label": "Neutral 800",
-              "css_var": "--color-neutral-800",
+              "property": "--color-neutral-800",
               "default": "#1e2939"
             },
             {
               "id": "900",
               "label": "Neutral 900",
-              "css_var": "--color-neutral-900",
+              "property": "--color-neutral-900",
               "default": "#101828"
             },
             {
               "id": "950",
               "label": "Neutral 950",
-              "css_var": "--color-neutral-950",
+              "property": "--color-neutral-950",
               "default": "#030712"
             },
             {
               "id": "black",
               "label": "Black",
-              "css_var": "--color-black",
+              "property": "--color-black",
               "default": "#000000"
             }
           ]
@@ -259,25 +259,25 @@
             {
               "id": "blue",
               "label": "Blue",
-              "css_var": "--color-blue",
+              "property": "--color-blue",
               "default": "#3160e2"
             },
             {
               "id": "green",
               "label": "Green",
-              "css_var": "--color-green",
+              "property": "--color-green",
               "default": "#008236"
             },
             {
               "id": "red",
               "label": "Red",
-              "css_var": "--color-red",
+              "property": "--color-red",
               "default": "#c10007"
             },
             {
               "id": "yellow",
               "label": "Yellow",
-              "css_var": "--color-yellow",
+              "property": "--color-yellow",
               "default": "#fdc700"
             }
           ]
