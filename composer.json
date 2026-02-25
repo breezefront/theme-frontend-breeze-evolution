@@ -10,6 +10,6 @@
         ]
     },
     "require": {
-        "swissup/theme-frontend-breeze-blank": "^2.11.7"
+        "swissup/theme-frontend-breeze-blank": "dev-feat/3.0"
     }
 }
