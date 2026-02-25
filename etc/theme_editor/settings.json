@@ -2,9 +2,9 @@
   "version": "1.0",
   "sections": [
     {
-      "id": "typography",
-      "name": "Typography",
-      "order": 20,
+      "id": "colors",
+      "name": "Colors",
+      "order": 10,
       "settings": [
         {
           "id": "body-bg",
@@ -31,32 +31,53 @@
           "palette": "default"
         },
         {
-          "id": "font-size",
-          "label": "Font Size",
-          "type": "range",
-          "unit": "px",
-          "default": "16px",
-          "min": "12",
-          "max": "20",
-          "property": "--base-font-size"
+          "id": "header-panel-bg",
+          "label": "Header Top Panel Background",
+          "type": "color",
+          "default": "#000d3a",
+          "property": "--header-panel-bg",
+          "palette": "default"
         },
         {
-          "id": "line-height",
-          "label": "Line Height",
-          "type": "range",
-          "unit": "px",
-          "default": "24px",
-          "min": "16",
-          "max": "36",
-          "property": "--base-line-height"
-        }
-      ]
-    },
-    {
-      "id": "buttons",
-      "name": "Buttons",
-      "order": 30,
-      "settings": [
+          "id": "header-panel-color",
+          "label": "Header Top Panel Text Color",
+          "type": "color",
+          "default": "#ffffff",
+          "property": "--header-panel-color",
+          "palette": "default"
+        },
+        {
+          "id": "header-bg",
+          "label": "Header Background",
+          "type": "color",
+          "default": "#ffffff",
+          "property": "--header-bg",
+          "palette": "default"
+        },
+        {
+          "id": "header-color",
+          "label": "Header Text Color",
+          "type": "color",
+          "default": "#1e2939",
+          "property": "--header-color",
+          "palette": "default"
+        },
+        {
+          "id": "footer-top-bg",
+          "label": "Footer Newsletter Background",
+          "type": "color",
+          "default": "#f7f7f7",
+          "property": "--footer-top-bg",
+          "palette": "default"
+        },
+        {
+          "id": "footer-bg",
+          "label": "Footer Background",
+          "type": "color",
+          "default": "#000622",
+          "property": "--footer-middle-bg",
+          "palette": "default"
+        },
         {
           "id": "button-bg",
           "label": "Primary Button Background",
@@ -88,23 +109,6 @@
           "default": "#6b727c",
           "property": "--button-secondary-color",
           "palette": "default"
-        }
-      ]
-    },
-    {
-      "id": "forms",
-      "name": "Forms",
-      "order": 40,
-      "settings": [
-        {
-          "id": "input-border-radius",
-          "label": "Input Border Radius",
-          "type": "range",
-          "default": "4px",
-          "unit": "px",
-          "min": 0,
-          "max": 30,
-          "property": "--input-border-radius"
         },
         {
           "id": "input-bg",
@@ -113,24 +117,6 @@
           "default": "#ffffff",
           "property": "--input-bg",
           "palette": "default"
-        },
-        {
-          "id": "input-focus-bg",
-          "label": "Input Focus Background",
-          "type": "color",
-          "default": "#f6f7f7",
-          "property": "--input-focus-bg",
-          "palette": "default"
-        },
-        {
-          "id": "input-border-width",
-          "label": "Input Border Width",
-          "type": "range",
-          "default": "2px",
-          "unit": "px",
-          "min": 0,
-          "max": 5,
-          "property": "--input-border-width"
         },
         {
           "id": "input-border-color",
@@ -151,41 +137,96 @@
       ]
     },
     {
-      "id": "header",
-      "name": "Header",
-      "order": 50,
+      "id": "typography",
+      "name": "Typography",
+      "order": 20,
       "settings": [
         {
-          "id": "header-panel-bg",
-          "label": "Header Panel Background",
-          "type": "color",
-          "default": "#000d3a",
-          "property": "--header-panel-bg",
-          "palette": "default"
+          "id": "font-size",
+          "label": "Font Size",
+          "type": "range",
+          "unit": "px",
+          "default": "16px",
+          "min": "12",
+          "max": "20",
+          "property": "--base-font-size"
         },
         {
-          "id": "header-panel-color",
-          "label": "Header Panel Text Color",
-          "type": "color",
-          "default": "#ffffff",
-          "property": "--header-panel-color",
-          "palette": "default"
+          "id": "line-height",
+          "label": "Line Height",
+          "type": "range",
+          "unit": "px",
+          "default": "24px",
+          "min": "16",
+          "max": "36",
+          "property": "--base-line-height"
+        }
+      ]
+    },
+    {
+      "id": "border-radius",
+      "name": "Border Radius",
+      "order": 40,
+      "settings": [
+        {
+          "id": "base-border-radius",
+          "label": "Base Border Radius",
+          "type": "range",
+          "default": "4px",
+          "unit": "px",
+          "min": 0,
+          "max": 30,
+          "property": "--base-border-radius"
         },
         {
-          "id": "header-bg",
-          "label": "Header Background",
-          "type": "color",
-          "default": "#ffffff",
-          "property": "--header-bg",
-          "palette": "default"
+          "id": "button-border-radius",
+          "label": "Button Border Radius",
+          "type": "range",
+          "default": "4px",
+          "unit": "px",
+          "min": 0,
+          "max": 30,
+          "property": "--button-border-radius"
         },
         {
-          "id": "header-color",
-          "label": "Header Text Color",
-          "type": "color",
-          "default": "#1e2939",
-          "property": "--header-color",
-          "palette": "default"
+          "id": "input-border-radius",
+          "label": "Input Border Radius",
+          "type": "range",
+          "default": "4px",
+          "unit": "px",
+          "min": 0,
+          "max": 30,
+          "property": "--input-border-radius"
+        },
+        {
+          "id": "surface-border-radius",
+          "label": "Surface Border Radius",
+          "type": "range",
+          "default": "4px",
+          "unit": "px",
+          "min": 0,
+          "max": 30,
+          "property": "--surface-border-radius"
+        },
+        {
+          "id": "popover-border-radius",
+          "label": "Dropdown Border Radius",
+          "type": "range",
+          "default": "4px",
+          "unit": "px",
+          "min": 0,
+          "max": 30,
+          "property": "--popover-border-radius"
+        },
+        {
+          "id": "modal-border-radius",
+          "label": "Modal Border Radius",
+          "type": "range",
+          "default": "4px",
+          "unit": "px",
+          "min": 0,
+          "max": 30,
+          "property": "--modal-border-radius"
         }
       ]
     }
