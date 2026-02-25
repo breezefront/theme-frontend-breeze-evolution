@@ -56,6 +56,8 @@
 // Header
 @header__border: ~"2px solid color-mix(in oklch, var(--color-brand-secondary) 5%, transparent)";
 @header__border-width: 0 0 2px;
+@header__color: ~"color-mix(in oklch, var(--color-brand-secondary) 92%, transparent)";
+@header__inverted__color: ~"color-mix(in oklch, var(--color-brand-secondary) 45%, var(--base-color))";
 @header__background: ~"var(--base-bg)";
 @header-panel__dark: true;
 @header-panel__background: ~"var(--color-brand-secondary)";
@@ -86,8 +88,7 @@
 @footer-newsletter-input__border-color: @footer-newsletter-input__background;
 
 // Navigation
-@navigation-item-level0__color: ~"color-mix(in oklch, var(--color-brand-secondary) 92%, transparent)";
-@navigation-item-level0__inverted__color: ~"color-mix(in oklch, var(--color-brand-secondary) 45%, var(--base-color))";
+@navigation-item-level0__color: ~"var(--header-color)";
 @navigation-item-level0__font-weight: 600;
 
 // Minisearch
@@ -308,7 +309,9 @@
 }
 .breeze-tokens-inverted() {
     .lib-rgb(--color-brand-secondary, @color__inverted__brand-secondary);
+    .lib-rgb(--header-color, @header__inverted__color);
 }
 .breeze-tokens-inverted-reset() {
     .lib-rgb(--color-brand-secondary, @color__brand-secondary);
+    .lib-rgb(--header-color, @header__color);
 }
