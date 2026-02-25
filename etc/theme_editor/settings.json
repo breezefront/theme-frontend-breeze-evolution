@@ -87,6 +87,14 @@
           "palette": "default"
         },
         {
+          "id": "button-hover-bg",
+          "label": "Primary Button Hover Background",
+          "type": "color",
+          "default": "#1d1d1d",
+          "property": "--button-hover-bg",
+          "palette": "default"
+        },
+        {
           "id": "button-color",
           "label": "Primary Button Color",
           "type": "color",
