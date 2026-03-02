@@ -1,5 +1,6 @@
 {
   "version": "1.0",
+  "inheritParent": false,
   "sections": [
     {
       "id": "colors",
@@ -30,6 +31,7 @@
           "property": "--link-color",
           "palette": "default"
         },
+        { "id": "header-colors", "type": "heading", "label": "Header" },
         {
           "id": "header-panel-bg",
           "label": "Header Top Panel Background",
@@ -62,6 +64,7 @@
           "property": "--header-color",
           "palette": "default"
         },
+        { "id": "footer-colors", "type": "heading", "label": "Footer" },
         {
           "id": "footer-top-bg",
           "label": "Footer Newsletter Background",
@@ -78,6 +81,7 @@
           "property": "--footer-middle-bg",
           "palette": "default"
         },
+        { "id": "buttons-colors", "type": "heading", "label": "Buttons" },
         {
           "id": "button-bg",
           "label": "Primary Button Background",
@@ -118,6 +122,7 @@
           "property": "--button-secondary-color",
           "palette": "default"
         },
+        { "id": "inputs-colors", "type": "heading", "label": "Inputs" },
         {
           "id": "input-bg",
           "label": "Input Background",
