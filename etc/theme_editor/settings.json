@@ -171,11 +171,6 @@
       "order": 20,
       "settings": [
         {
-          "id": "font-roles",
-          "type": "heading",
-          "label": "Font Roles"
-        },
-        {
           "id": "primary-font",
           "label": "Primary Font",
           "type": "font_picker",
@@ -198,11 +193,6 @@
           "default": "system-ui, -apple-system, sans-serif",
           "property": "--utility-font",
           "font_palette": "default"
-        },
-        {
-          "id": "font-assignments",
-          "type": "heading",
-          "label": "Font Assignments"
         },
         {
           "id": "base-font-family",
