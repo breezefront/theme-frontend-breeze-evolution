@@ -171,81 +171,46 @@
       "order": 20,
       "settings": [
         {
+          "id": "font-roles",
+          "type": "heading",
+          "label": "Font Roles"
+        },
+        {
+          "id": "primary-font",
+          "label": "Primary Font",
+          "type": "font_picker",
+          "default": "system-ui, -apple-system, sans-serif",
+          "property": "--primary-font",
+          "font_palette": "default"
+        },
+        {
+          "id": "secondary-font",
+          "label": "Secondary Font",
+          "type": "font_picker",
+          "default": "system-ui, -apple-system, sans-serif",
+          "property": "--secondary-font",
+          "font_palette": "default"
+        },
+        {
+          "id": "utility-font",
+          "label": "Utility Font",
+          "type": "font_picker",
+          "default": "system-ui, -apple-system, sans-serif",
+          "property": "--utility-font",
+          "font_palette": "default"
+        },
+        {
+          "id": "font-assignments",
+          "type": "heading",
+          "label": "Font Assignments"
+        },
+        {
           "id": "base-font-family",
-          "label": "Body Font",
+          "label": "Base Font",
           "type": "font_picker",
           "default": "system-ui, -apple-system, sans-serif",
           "property": "--base-font-family",
-          "options": [
-            {
-              "value": "system-ui, -apple-system, sans-serif",
-              "label": "System UI"
-            },
-            {
-              "value": "Arial, sans-serif",
-              "label": "Arial"
-            },
-            {
-              "value": "'Helvetica Neue', Helvetica, sans-serif",
-              "label": "Helvetica Neue"
-            },
-            {
-              "value": "Georgia, serif",
-              "label": "Georgia"
-            },
-            {
-              "value": "'Times New Roman', serif",
-              "label": "Times New Roman"
-            },
-            {
-              "value": "Verdana, sans-serif",
-              "label": "Verdana"
-            },
-            {
-              "value": "'Courier New', monospace",
-              "label": "Courier New"
-            },
-            {
-              "value": "'Roboto', sans-serif",
-              "label": "Roboto",
-              "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-            },
-            {
-              "value": "'Open Sans', sans-serif",
-              "label": "Open Sans",
-              "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-            },
-            {
-              "value": "'Lato', sans-serif",
-              "label": "Lato",
-              "url": "https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-            },
-            {
-              "value": "'Montserrat', sans-serif",
-              "label": "Montserrat",
-              "url": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
-            },
-            {
-              "value": "'Poppins', sans-serif",
-              "label": "Poppins",
-              "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-            },
-            {
-              "value": "'Nunito', sans-serif",
-              "label": "Nunito",
-              "url": "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
-            },
-            {
-              "value": "'Merriweather', serif",
-              "label": "Merriweather",
-              "url": "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
-            },
-            {
-              "value": "'Playfair Display', serif",
-              "label": "Playfair Display",
-              "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
-            }
-          ]
+          "font_palette": "default"
         },
         {
           "id": "headings-font-family",
@@ -253,62 +218,7 @@
           "type": "font_picker",
           "default": "system-ui, -apple-system, sans-serif",
           "property": "--headings-font-family",
-          "options": [
-            {
-              "value": "system-ui, -apple-system, sans-serif",
-              "label": "System UI"
-            },
-            {
-              "value": "Arial, sans-serif",
-              "label": "Arial"
-            },
-            {
-              "value": "'Helvetica Neue', Helvetica, sans-serif",
-              "label": "Helvetica Neue"
-            },
-            {
-              "value": "Georgia, serif",
-              "label": "Georgia"
-            },
-            {
-              "value": "'Times New Roman', serif",
-              "label": "Times New Roman"
-            },
-            {
-              "value": "Verdana, sans-serif",
-              "label": "Verdana"
-            },
-            {
-              "value": "'Roboto', sans-serif",
-              "label": "Roboto",
-              "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-            },
-            {
-              "value": "'Montserrat', sans-serif",
-              "label": "Montserrat",
-              "url": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
-            },
-            {
-              "value": "'Poppins', sans-serif",
-              "label": "Poppins",
-              "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-            },
-            {
-              "value": "'Raleway', sans-serif",
-              "label": "Raleway",
-              "url": "https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
-            },
-            {
-              "value": "'Playfair Display', serif",
-              "label": "Playfair Display",
-              "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
-            },
-            {
-              "value": "'Merriweather', serif",
-              "label": "Merriweather",
-              "url": "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
-            }
-          ]
+          "font_palette": "default"
         },
         {
           "id": "font-size",
@@ -540,6 +450,86 @@
           ]
         }
       }
+    }
+  },
+  "font_palettes": {
+    "default": {
+      "id": "default",
+      "label": "Default Font Palette",
+      "options": [
+        { "value": "system-ui, -apple-system, sans-serif", "label": "System UI" },
+        { "value": "Arial, sans-serif", "label": "Arial" },
+        { "value": "'Helvetica Neue', Helvetica, sans-serif", "label": "Helvetica Neue" },
+        { "value": "Georgia, serif", "label": "Georgia" },
+        { "value": "'Times New Roman', serif", "label": "Times New Roman" },
+        { "value": "Verdana, sans-serif", "label": "Verdana" },
+        { "value": "'Courier New', monospace", "label": "Courier New" },
+        {
+          "value": "'Roboto', sans-serif",
+          "label": "Roboto",
+          "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        },
+        {
+          "value": "'Open Sans', sans-serif",
+          "label": "Open Sans",
+          "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+        },
+        {
+          "value": "'Lato', sans-serif",
+          "label": "Lato",
+          "url": "https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+        },
+        {
+          "value": "'Montserrat', sans-serif",
+          "label": "Montserrat",
+          "url": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+        },
+        {
+          "value": "'Poppins', sans-serif",
+          "label": "Poppins",
+          "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+        },
+        {
+          "value": "'Nunito', sans-serif",
+          "label": "Nunito",
+          "url": "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+        },
+        {
+          "value": "'Raleway', sans-serif",
+          "label": "Raleway",
+          "url": "https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+        },
+        {
+          "value": "'Playfair Display', serif",
+          "label": "Playfair Display",
+          "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+        },
+        {
+          "value": "'Merriweather', serif",
+          "label": "Merriweather",
+          "url": "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+        }
+      ],
+      "fonts": [
+        {
+          "id": "primary",
+          "label": "Primary",
+          "property": "--primary-font",
+          "default": "system-ui, -apple-system, sans-serif"
+        },
+        {
+          "id": "secondary",
+          "label": "Secondary",
+          "property": "--secondary-font",
+          "default": "system-ui, -apple-system, sans-serif"
+        },
+        {
+          "id": "utility",
+          "label": "Utility",
+          "property": "--utility-font",
+          "default": "system-ui, -apple-system, sans-serif"
+        }
+      ]
     }
   }
 }
