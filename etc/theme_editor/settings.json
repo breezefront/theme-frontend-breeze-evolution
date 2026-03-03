@@ -31,7 +31,11 @@
           "property": "--link-color",
           "palette": "default"
         },
-        { "id": "header-colors", "type": "heading", "label": "Header" },
+        {
+          "id": "header-colors",
+          "type": "heading",
+          "label": "Header"
+        },
         {
           "id": "header-panel-bg",
           "label": "Header Top Panel Background",
@@ -64,7 +68,11 @@
           "property": "--header-color",
           "palette": "default"
         },
-        { "id": "footer-colors", "type": "heading", "label": "Footer" },
+        {
+          "id": "footer-colors",
+          "type": "heading",
+          "label": "Footer"
+        },
         {
           "id": "footer-top-bg",
           "label": "Footer Newsletter Background",
@@ -81,7 +89,11 @@
           "property": "--footer-middle-bg",
           "palette": "default"
         },
-        { "id": "buttons-colors", "type": "heading", "label": "Buttons" },
+        {
+          "id": "buttons-colors",
+          "type": "heading",
+          "label": "Buttons"
+        },
         {
           "id": "button-bg",
           "label": "Primary Button Background",
@@ -122,7 +134,11 @@
           "property": "--button-secondary-color",
           "palette": "default"
         },
-        { "id": "inputs-colors", "type": "heading", "label": "Inputs" },
+        {
+          "id": "inputs-colors",
+          "type": "heading",
+          "label": "Inputs"
+        },
         {
           "id": "input-bg",
           "label": "Input Background",
@@ -154,6 +170,146 @@
       "name": "Typography",
       "order": 20,
       "settings": [
+        {
+          "id": "base-font-family",
+          "label": "Body Font",
+          "type": "font_picker",
+          "default": "system-ui, -apple-system, sans-serif",
+          "property": "--base-font-family",
+          "options": [
+            {
+              "value": "system-ui, -apple-system, sans-serif",
+              "label": "System UI"
+            },
+            {
+              "value": "Arial, sans-serif",
+              "label": "Arial"
+            },
+            {
+              "value": "'Helvetica Neue', Helvetica, sans-serif",
+              "label": "Helvetica Neue"
+            },
+            {
+              "value": "Georgia, serif",
+              "label": "Georgia"
+            },
+            {
+              "value": "'Times New Roman', serif",
+              "label": "Times New Roman"
+            },
+            {
+              "value": "Verdana, sans-serif",
+              "label": "Verdana"
+            },
+            {
+              "value": "'Courier New', monospace",
+              "label": "Courier New"
+            },
+            {
+              "value": "'Roboto', sans-serif",
+              "label": "Roboto",
+              "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            },
+            {
+              "value": "'Open Sans', sans-serif",
+              "label": "Open Sans",
+              "url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+            },
+            {
+              "value": "'Lato', sans-serif",
+              "label": "Lato",
+              "url": "https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+            },
+            {
+              "value": "'Montserrat', sans-serif",
+              "label": "Montserrat",
+              "url": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+            },
+            {
+              "value": "'Poppins', sans-serif",
+              "label": "Poppins",
+              "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+            },
+            {
+              "value": "'Nunito', sans-serif",
+              "label": "Nunito",
+              "url": "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+            },
+            {
+              "value": "'Merriweather', serif",
+              "label": "Merriweather",
+              "url": "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+            },
+            {
+              "value": "'Playfair Display', serif",
+              "label": "Playfair Display",
+              "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+            }
+          ]
+        },
+        {
+          "id": "headings-font-family",
+          "label": "Headings Font",
+          "type": "font_picker",
+          "default": "system-ui, -apple-system, sans-serif",
+          "property": "--headings-font-family",
+          "options": [
+            {
+              "value": "system-ui, -apple-system, sans-serif",
+              "label": "System UI"
+            },
+            {
+              "value": "Arial, sans-serif",
+              "label": "Arial"
+            },
+            {
+              "value": "'Helvetica Neue', Helvetica, sans-serif",
+              "label": "Helvetica Neue"
+            },
+            {
+              "value": "Georgia, serif",
+              "label": "Georgia"
+            },
+            {
+              "value": "'Times New Roman', serif",
+              "label": "Times New Roman"
+            },
+            {
+              "value": "Verdana, sans-serif",
+              "label": "Verdana"
+            },
+            {
+              "value": "'Roboto', sans-serif",
+              "label": "Roboto",
+              "url": "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            },
+            {
+              "value": "'Montserrat', sans-serif",
+              "label": "Montserrat",
+              "url": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+            },
+            {
+              "value": "'Poppins', sans-serif",
+              "label": "Poppins",
+              "url": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+            },
+            {
+              "value": "'Raleway', sans-serif",
+              "label": "Raleway",
+              "url": "https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"
+            },
+            {
+              "value": "'Playfair Display', serif",
+              "label": "Playfair Display",
+              "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+            },
+            {
+              "value": "'Merriweather', serif",
+              "label": "Merriweather",
+              "url": "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+            }
+          ]
+        },
         {
           "id": "font-size",
           "label": "Font Size",
