@@ -16,6 +16,22 @@
           "palette": "default"
         },
         {
+          "id": "surface-bg",
+          "label": "Elevated Surfaces Background",
+          "type": "color",
+          "default": "#ffffff",
+          "property": "--surface-bg",
+          "palette": "default"
+        },
+        {
+          "id": "popover-bg",
+          "label": "Popover Background",
+          "type": "color",
+          "default": "#ffffff",
+          "property": "--popover-bg",
+          "palette": "default"
+        },
+        {
           "id": "base-color",
           "label": "Text Color",
           "type": "color",
