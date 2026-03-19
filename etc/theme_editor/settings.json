@@ -156,6 +156,14 @@
           "label": "Inputs"
         },
         {
+          "id": "input-color",
+          "label": "Input Text Color",
+          "type": "color",
+          "default": "#1e2939",
+          "property": "--input-color",
+          "palette": "default"
+        },
+        {
           "id": "input-bg",
           "label": "Input Background",
           "type": "color",
