@@ -198,7 +198,7 @@
           "id": "primary-font",
           "label": "Primary Font",
           "type": "font_picker",
-          "default": "system-ui, -apple-system, sans-serif",
+          "default": "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
           "property": "--primary-font",
           "font_palette": "default"
         },
@@ -206,7 +206,7 @@
           "id": "secondary-font",
           "label": "Secondary Font",
           "type": "font_picker",
-          "default": "system-ui, -apple-system, sans-serif",
+          "default": "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
           "property": "--secondary-font",
           "font_palette": "default"
         },
@@ -214,7 +214,7 @@
           "id": "utility-font",
           "label": "Utility Font",
           "type": "font_picker",
-          "default": "system-ui, -apple-system, sans-serif",
+          "default": "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
           "property": "--utility-font",
           "font_palette": "default"
         },
@@ -222,7 +222,7 @@
           "id": "base-font-family",
           "label": "Base Font",
           "type": "font_picker",
-          "default": "system-ui, -apple-system, sans-serif",
+          "default": "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
           "property": "--base-font-family",
           "font_palette": "default"
         },
@@ -230,7 +230,7 @@
           "id": "headings-font-family",
           "label": "Headings Font",
           "type": "font_picker",
-          "default": "system-ui, -apple-system, sans-serif",
+          "default": "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
           "property": "--headings-font-family",
           "font_palette": "default"
         },
@@ -346,6 +346,36 @@
               "description": "Secondary brand color for header color",
               "property": "--color-brand-secondary",
               "default": "#000d3a"
+            }
+          ]
+        },
+        "typography": {
+          "id": "typography",
+          "label": "Typography Colors",
+          "colors": [
+            {
+              "id": "muted-color",
+              "label": "Muted Color",
+              "property": "--muted-color",
+              "default": "#1e2939A1"
+            },
+            {
+              "id": "muted-bg",
+              "label": "Muted Background",
+              "property": "--muted-bg",
+              "default": "#1e29390D"
+            },
+            {
+              "id": "subtle-color",
+              "label": "Subtle Color",
+              "property": "--subtle-color",
+              "default": "#1e29391A"
+            },
+            {
+              "id": "subtle-bg",
+              "label": "Subtle Background",
+              "property": "--subtle-bg",
+              "default": "#1e293905"
             }
           ]
         },
@@ -471,7 +501,7 @@
       "id": "default",
       "label": "Default Font Palette",
       "options": [
-        { "value": "system-ui, -apple-system, sans-serif", "label": "System UI" },
+        { "value": "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'", "label": "System UI" },
         { "value": "Arial, sans-serif", "label": "Arial" },
         { "value": "'Helvetica Neue', Helvetica, sans-serif", "label": "Helvetica Neue" },
         { "value": "Georgia, serif", "label": "Georgia" },
@@ -529,19 +559,19 @@
           "id": "primary",
           "label": "Primary",
           "property": "--primary-font",
-          "default": "system-ui, -apple-system, sans-serif"
+          "default": "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
         },
         {
           "id": "secondary",
           "label": "Secondary",
           "property": "--secondary-font",
-          "default": "system-ui, -apple-system, sans-serif"
+          "default": "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
         },
         {
           "id": "utility",
           "label": "Utility",
           "property": "--utility-font",
-          "default": "system-ui, -apple-system, sans-serif"
+          "default": "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
         }
       ]
     }
