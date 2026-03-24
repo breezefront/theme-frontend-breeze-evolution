@@ -3,6 +3,51 @@
   "inheritParent": false,
   "sections": [
     {
+      "id": "layout",
+      "name": "Layout",
+      "order": 5,
+      "settings": [
+        {
+          "id": "page-max-width",
+          "label": "Page Max Width",
+          "type": "range",
+          "default": "3000px",
+          "unit": "px",
+          "min": 1024,
+          "max": 3000,
+          "property": "--page-max-width"
+        },
+        {
+          "id": "page-box-shadow-spread",
+          "label": "Page Shadow",
+          "type": "range",
+          "default": "0px",
+          "unit": "px",
+          "min": 0,
+          "max": 40,
+          "property": "--page-box-shadow-spread"
+        },
+        {
+          "id": "page-bg",
+          "label": "Page Background",
+          "type": "color",
+          "default": "#ffffff00",
+          "property": "--page-bg",
+          "palette": "default"
+        },
+        {
+          "id": "container-max-width",
+          "label": "Container Max Width",
+          "type": "range",
+          "default": "1260px",
+          "unit": "px",
+          "min": 980,
+          "max": 3000,
+          "property": "--container-max-width"
+        }
+      ]
+    },
+    {
       "id": "colors",
       "name": "Colors",
       "order": 10,
