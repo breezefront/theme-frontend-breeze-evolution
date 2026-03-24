@@ -48,6 +48,14 @@
           "palette": "default"
         },
         {
+          "id": "focus-ring-color",
+          "label": "Focus Ring Color",
+          "type": "color",
+          "default": "#000000",
+          "property": "--focus-ring-color",
+          "palette": "default"
+        },
+        {
           "id": "header-colors",
           "type": "heading",
           "label": "Header"
@@ -183,8 +191,16 @@
           "id": "input-outline-color",
           "label": "Input Focus Ring Color",
           "type": "color",
-          "default": "#000",
+          "default": "#000000",
           "property": "--input-outline-color",
+          "palette": "default"
+        },
+        {
+          "id": "checkbox-color",
+          "label": "Checkbox Color",
+          "type": "color",
+          "default": "#000000",
+          "property": "--checkbox-color",
           "palette": "default"
         }
       ]
