@@ -22,12 +22,12 @@
     }
     .bg-wave-top::before {
         mask: url(../images/wave-white-top.svg) no-repeat 50% 0;
-        background: var(--body-bg);
+        background: var(--page-bg, var(--body-bg));
         top: -2px;
     }
     .bg-wave-bottom::after {
         mask: url(../images/wave-white.svg) no-repeat 50% 100%;
-        background: var(--body-bg);
+        background: var(--page-bg, var(--body-bg));
         bottom: -2px;
     }
 }
