@@ -138,6 +138,43 @@
           "palette": "default"
         },
         {
+          "id": "navigation-colors",
+          "type": "heading",
+          "label": "Navigation"
+        },
+        {
+          "id": "navigation-item-level0-color",
+          "label": "First Level Navigation Text Color",
+          "type": "color",
+          "default": "#1e2939",
+          "property": "--navigation-item-level0-color",
+          "palette": "default"
+        },
+        {
+          "id": "navigation-color",
+          "label": "Navigation Dropdown Text Color",
+          "type": "color",
+          "default": "#1e2939",
+          "property": "--navigation-color",
+          "palette": "default"
+        },
+        {
+          "id": "navigation-dropdown-bg",
+          "label": "Navigation Dropdown Background",
+          "type": "color",
+          "default": "#ffffff",
+          "property": "--navigation-dropdown-bg",
+          "palette": "default"
+        },
+        {
+          "id": "navigation-dropdown-border-color",
+          "label": "Navigation Dropdown Border Color",
+          "type": "color",
+          "default": "#00000000",
+          "property": "--navigation-dropdown-border-color",
+          "palette": "default"
+        },
+        {
           "id": "footer-colors",
           "type": "heading",
           "label": "Footer"
