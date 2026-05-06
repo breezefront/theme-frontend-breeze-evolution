@@ -420,6 +420,109 @@
           "property": "--modal-border-radius"
         }
       ]
+    },
+    {
+      "id": "listing",
+      "name": "Products Listing",
+      "order": 50,
+      "settings": [
+        {
+          "id": "columns-count",
+          "type": "heading",
+          "label": "Columns Count"
+        },
+        {
+          "id": "columns-count-2columns",
+          "label": "Small Screen",
+          "type": "range",
+          "default": 2,
+          "min": 1,
+          "max": 6,
+          "property": "--listing-grid-media-all-columns"
+        },
+        {
+          "id": "columns-count-sm-2columns",
+          "label": "Screen ≥ 640px",
+          "type": "range",
+          "default": 3,
+          "min": 1,
+          "max": 6,
+          "property": "--listing-grid-media-sm-columns"
+        },
+        {
+          "id": "columns-count-lg-2columns",
+          "label": "Screen ≥ 1024px",
+          "type": "range",
+          "default": 3,
+          "min": 1,
+          "max": 6,
+          "property": "--listing-grid-media-lg-columns"
+        },
+        {
+          "id": "columns-count-xl-2columns",
+          "label": "Screen ≥ 1280px",
+          "type": "range",
+          "default": 3,
+          "min": 1,
+          "max": 6,
+          "property": "--listing-grid-media-xl-columns"
+        },
+        {
+          "id": "columns-count-1column",
+          "type": "heading",
+          "label": "Columns Count for 1 Column Layout"
+        },
+        {
+          "id": "columns-count-md-1column",
+          "label": "Screen ≥ 768px",
+          "type": "range",
+          "default": 4,
+          "min": 1,
+          "max": 6,
+          "property": "--listing-grid-media-md-1column-columns"
+        },
+        {
+          "id": "columns-count-lg-1column",
+          "label": "Screen ≥ 1024px",
+          "type": "range",
+          "default": 5,
+          "min": 1,
+          "max": 6,
+          "property": "--listing-grid-media-lg-1column-columns"
+        },
+        {
+          "id": "columns-count-xl-1column",
+          "label": "Screen ≥ 1280px",
+          "type": "range",
+          "default": 5,
+          "min": 1,
+          "max": 6,
+          "property": "--listing-grid-media-xl-1column-columns"
+        },
+        {
+          "id": "columns-count-3columns",
+          "type": "heading",
+          "label": "Columns Count for 3 Columns Layout"
+        },
+        {
+          "id": "columns-count-lg-3columns",
+          "label": "Screen ≥ 1024px",
+          "type": "range",
+          "default": 3,
+          "min": 1,
+          "max": 6,
+          "property": "--listing-grid-media-lg-3columns-columns"
+        },
+        {
+          "id": "columns-count-xl-3columns",
+          "label": "Screen ≥ 1280px",
+          "type": "range",
+          "default": 3,
+          "min": 1,
+          "max": 6,
+          "property": "--listing-grid-media-xl-3columns-columns"
+        }
+      ]
     }
   ],
   "palettes": {
