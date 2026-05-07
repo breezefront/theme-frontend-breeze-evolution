@@ -10,6 +10,6 @@
         ]
     },
     "require": {
-        "swissup/theme-frontend-breeze-blank": "^3.0.0-beta.2"
+        "swissup/theme-frontend-breeze-blank": "^3.0.0"
     }
 }
