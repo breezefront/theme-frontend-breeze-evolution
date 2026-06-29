@@ -317,40 +317,149 @@
           "font_palette": "default"
         },
         {
+          "id": "base-text-settings",
+          "type": "heading",
+          "label": "Base Text"
+        },
+        {
           "id": "base-font-family",
-          "label": "Base Font",
+          "label": "Base Font Family",
           "type": "font_picker",
           "default": "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
           "property": "--base-font-family",
           "font_palette": "default"
         },
         {
+          "id": "font-size",
+          "label": "Base Font Size",
+          "type": "text",
+          "default": "1rem",
+          "property": "--base-font-size"
+        },
+        {
+          "id": "line-height",
+          "label": "Base Line Height",
+          "type": "text",
+          "default": "1.5rem",
+          "property": "--base-line-height"
+        },
+        {
+          "id": "headings-text-settings",
+          "type": "heading",
+          "label": "Headings"
+        },
+        {
           "id": "headings-font-family",
-          "label": "Headings Font",
+          "label": "Headings Font Family",
           "type": "font_picker",
           "default": "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
           "property": "--headings-font-family",
           "font_palette": "default"
         },
         {
-          "id": "font-size",
-          "label": "Font Size",
-          "type": "range",
-          "unit": "px",
-          "default": "16px",
-          "min": "12",
-          "max": "20",
-          "property": "--base-font-size"
+          "id": "h1-font-size",
+          "label": "H1 Font Size",
+          "type": "text",
+          "default": "2.25rem",
+          "property": "--h1-font-size"
         },
         {
-          "id": "line-height",
-          "label": "Line Height",
-          "type": "range",
-          "unit": "px",
-          "default": "24px",
-          "min": "16",
-          "max": "36",
-          "property": "--base-line-height"
+          "id": "h1-line-height",
+          "label": "H1 Line Height",
+          "type": "text",
+          "default": "2.5rem",
+          "property": "--h1-line-height"
+        },
+        {
+          "id": "h1-font-weight",
+          "label": "H1 Font Weight",
+          "type": "text",
+          "default": "700",
+          "property": "--h1-font-weight"
+        },
+        {
+          "id": "h2-font-size",
+          "label": "H2 Font Size",
+          "type": "text",
+          "default": "1.875rem",
+          "property": "--h2-font-size"
+        },
+        {
+          "id": "h2-line-height",
+          "label": "H2 Line Height",
+          "type": "text",
+          "default": "2.25rem",
+          "property": "--h2-line-height"
+        },
+        {
+          "id": "h2-font-weight",
+          "label": "H2 Font Weight",
+          "type": "text",
+          "default": "700",
+          "property": "--h2-font-weight"
+        },
+        {
+          "id": "h3-font-size",
+          "label": "H3 Font Size",
+          "type": "text",
+          "default": "1.5rem",
+          "property": "--h3-font-size"
+        },
+        {
+          "id": "h3-line-height",
+          "label": "H3 Line Height",
+          "type": "text",
+          "default": "2rem",
+          "property": "--h3-line-height"
+        },
+        {
+          "id": "h3-font-weight",
+          "label": "H3 Font Weight",
+          "type": "text",
+          "default": "600",
+          "property": "--h3-font-weight"
+        },
+        {
+          "id": "hero-block-title-font-size",
+          "label": "Hero Block Title Font Size",
+          "type": "text",
+          "default": "1.75rem",
+          "property": "--hero-block-title-font-size"
+        },
+        {
+          "id": "hero-block-title-line-height",
+          "label": "Hero Block Title Line Height",
+          "type": "text",
+          "default": "1.75rem",
+          "property": "--hero-block-title-line-height"
+        },
+        {
+          "id": "hero-block-title-font-weight",
+          "label": "Hero Block Title Font Weight",
+          "type": "text",
+          "default": "700",
+          "property": "--hero-block-title-font-weight"
+        },
+        {
+          "id": "hero-block-cms-title-font-size",
+          "label": "CMS Hero Block Title Font Size",
+          "type": "text",
+          "default": "clamp(1.75rem, 2.3vw, 2rem)",
+          "property": "--hero-block-cms-title-font-size"
+        },
+        {
+          "id": "hero-block-cms-title-line-height",
+          "label": "CMS Hero Block Title Line Height",
+          "type": "text",
+          "default": "clamp(2rem, 2.4vw, 3rem)",
+          "property": "--hero-block-cms-title-line-height"
+        },
+        {
+          "id": "hero-block-cms-title-font-weight",
+          "label": "CMS Hero Block Title Font Weight",
+          "type": "text",
+          "default": "700",
+          "property": "--hero-block-cms-title-font-weight"
         }
       ]
     },
