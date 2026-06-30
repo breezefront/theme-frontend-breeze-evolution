@@ -451,7 +451,7 @@
           "id": "hero-block-cms-title-line-height",
           "label": "CMS Hero Block Title Line Height",
           "type": "text",
-          "default": "clamp(2rem, 2.4vw, 3rem)",
+          "default": "1.2em",
           "property": "--hero-block-cms-title-line-height"
         },
         {
