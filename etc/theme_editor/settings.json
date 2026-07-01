@@ -632,6 +632,33 @@
           "property": "--listing-grid-media-xl-3columns-columns"
         }
       ]
+    },
+    {
+      "id": "animations",
+      "name": "Animations",
+      "order": 60,
+      "settings": [
+        {
+          "id": "scroll-reveal",
+          "label": "Scroll Reveal Animations",
+          "type": "toggle",
+          "default": "1"
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "name": "Advanced",
+      "order": 70,
+      "settings": [
+        {
+          "id": "custom-css",
+          "label": "Custom CSS",
+          "type": "code",
+          "default": "",
+          "params": { "language": "css", "rows": 12 }
+        }
+      ]
     }
   ],
   "palettes": {
